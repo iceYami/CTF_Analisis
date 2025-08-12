@@ -1,4 +1,4 @@
-# CTF "EARTH LOCAL"  
+# CTF "THE PLANETS: EARTH"  
 **Alcance:** Laboratorio / CTF sobre máquina Linux 192.168.131.130 (earth.local / terratest.earth.local).  
 **Objetivo del informe:** Documento técnico exhaustivo, orientado a auditoría y remediación. Reproducción completa del ataque, análisis de raíz, impacto, evidencias, detección y plan de corrección priorizado.
 
