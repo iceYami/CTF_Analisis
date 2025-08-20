@@ -1,5 +1,9 @@
 # CTF "The Planets: Earth (Extended)"
 
+ <div style="text-align: center;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg" width="550" alt="Earth">
+</div>
+
 ## Executive Summary
 
 **Target System:** 192.168.131.130 (earth.local / terratest.earth.local)  
