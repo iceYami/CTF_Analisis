@@ -1,4 +1,4 @@
-# Índice de Auditorías de CTF – Iceyami
+# Índice – Iceyami
 
 Repositorio de análisis de CTF que he resuelto, con enlaces a sus writeups y recursos.
 
@@ -22,5 +22,12 @@ Repositorio de análisis de CTF que he resuelto, con enlaces a sus writeups y re
 
 ## 📂 The Hackers Lab
 - 🚧 En preparación.
+
+## 📂 Codewars
+- [Python](https://github.com/iceYami/Codewars)
+
+## 📂 SQL
+- [LaSQL](https://github.com/iceYami/SQL)
+- [SQL Police Department](https://github.com/iceYami/SQL)
 
 ---
