@@ -1,4 +1,4 @@
-# Empire Breakout - Informe Profesional de Penetración
+# Empire Breakout - Informe de Penetración
 
 ## Información del Proyecto
 
