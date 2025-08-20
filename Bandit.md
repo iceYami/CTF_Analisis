@@ -2436,7 +2436,7 @@ Professional Skills:
 ### 🚀 Roadmap
 
 #### Corto Plazo (1-3 meses)
-```markdown
+
 1. **Completar Bandit Completo**
    - Niveles 4-33 con documentación similar
    - Crear scripts de automatización
@@ -2451,10 +2451,8 @@ Professional Skills:
    - Configurar entorno de práctica
    - Crear challenges personalizados
    - Desarrollar scripts de validación
-```
 
 #### Mediano Plazo (3-6 meses)
-```markdown
 1. **Certificaciones Entry Level**
    - CompTIA Security+ preparation
    - CEH study materials
@@ -2469,10 +2467,8 @@ Professional Skills:
    - CTF team participation
    - Writeup contributions
    - Knowledge sharing en foros
-```
 
 #### Largo Plazo (6-12 meses)
-```markdown
 1. **Especialización Profesional**
    - OSCP preparation
    - Bug bounty participation
@@ -2487,7 +2483,6 @@ Professional Skills:
    - Penetration tester role
    - Security analyst position
    - Incident response specialist
-```
 
 ---
 
@@ -2535,7 +2530,6 @@ y debe cumplir con todas las leyes y regulaciones aplicables.
 
 ### 👥 Reconocimientos
 
-```markdown
 ## Contribuidores y Reconocimientos
 
 ### Plataforma Base
@@ -2559,7 +2553,6 @@ y debe cumplir con todas las leyes y regulaciones aplicables.
 - **Markdown**: Documentation format
 - **Linux**: Operating system and tools
 - **SSH**: Secure Shell protocol
-```
 
 ---
 
@@ -2595,7 +2588,6 @@ Online Resources:
 
 ### 🔗 Enlaces Útiles
 
-```markdown
 ## Enlaces de Referencia
 
 ### Plataformas de Práctica
@@ -2621,7 +2613,6 @@ Online Resources:
 - [Metasploit](https://www.metasploit.com/)
 - [Nmap](https://nmap.org/)
 - [Wireshark](https://www.wireshark.org/)
-```
 
 ---
 
