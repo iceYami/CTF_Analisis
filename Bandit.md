@@ -2654,6 +2654,5 @@ Learning Time Estimate:
 
 ---
 
-*Documento completado - Versión 1.0*
 *Fecha de finalización: $(date)*
 *"Security is not a product, but a process" - Bruce Schneier*
