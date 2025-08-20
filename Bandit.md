@@ -2,7 +2,7 @@
 
 [![Bandit](https://es.web.img2.acsta.net/medias/nmedia/18/35/83/30/18458318.jpg)](https://overthewire.org/wargames/bandit/)
 
-# 🏴‍☠️ BANDIT WARGAME - ANÁLISIS COMPLETO Y METODOLOGÍA AVANZADA
+# 🏴‍☠️ BANDIT WARGAME - ANÁLISIS COMPLETO
 
 [![OverTheWire](https://img.shields.io/badge/OverTheWire-Bandit-red?style=for-the-badge&logo=linux)](https://overthewire.org/wargames/bandit/)
 [![SSH](https://img.shields.io/badge/Protocol-SSH-blue?style=for-the-badge&logo=ssh)](https://www.openssh.com/)
