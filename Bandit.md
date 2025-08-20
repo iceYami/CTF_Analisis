@@ -20,7 +20,6 @@ Target Information:
   - OS: Linux (Ubuntu-based)
   - Challenge Type: Linux Fundamentals & File System Security
   - Difficulty: Beginner to Intermediate
-  - Total Levels: 34 (0-33)
 ```
 
 ### Objetivos de Aprendizaje
