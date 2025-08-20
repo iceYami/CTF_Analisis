@@ -9,8 +9,7 @@
 | **Sistema Objetivo** | 192.168.131.129 |
 | **Tipo de Evaluación** | Black Box Penetration Test |
 | **Metodología** | OWASP Testing Guide v4.2 + PTES |
-| **Fecha de Evaluación** | [Fecha de Prueba] |
-| **Evaluador** | [Nombre del Pentester] |
+| **Pebtester** | [Iceyami] |
 | **Duración** | 45 minutos (tiempo de compromiso) |
 | **Clasificación** | CONFIDENCIAL |
 
