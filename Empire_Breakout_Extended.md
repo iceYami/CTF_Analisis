@@ -1,17 +1,16 @@
-# Empire Breakout - Informe de Penetración
+# Empire Breakout - Informe de Penetración (Extendido)
 
 ## Información del Proyecto
 
 | **Campo** | **Valor** |
 |-----------|-----------|
 | **Proyecto** | Empire Breakout Security Assessment |
-| **Cliente** | VulnHub Challenge Environment |
+| **Site** | VulnHub Challenge Environment |
 | **Sistema Objetivo** | 192.168.131.129 |
 | **Tipo de Evaluación** | Black Box Penetration Test |
 | **Metodología** | OWASP Testing Guide v4.2 + PTES |
-| **Pebtester** | [Iceyami] |
+| **Pentester** | [Iceyami] |
 | **Duración** | 45 minutos (tiempo de compromiso) |
-| **Clasificación** | CONFIDENCIAL |
 
 ---
 
