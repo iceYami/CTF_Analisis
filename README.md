@@ -8,16 +8,16 @@ Repositorio de análisis de CTF que he resuelto, con enlaces a sus writeups y re
 - [Empire Breakout](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout.md)
 - [The Planets: Earth](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth.md)
 
- # 📂 Over The Wire
+## 📂 Over The Wire
 - [Bandit](https://github.com/iceYami/CTF_Analisis/blob/main/Bandit.md)
 
 ## 📂 HackTheBox
--
+- 🚧 En preparación.
 
 ## 📂 TryHackMe
--
+- 🚧 En preparación.
 
 ## 📂 The Hackers Lab
--
+- 🚧 En preparación.
 
 ---
