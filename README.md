@@ -6,6 +6,7 @@ Repositorio de análisis de CTF que he resuelto, con enlaces a sus writeups y re
 
 ## 📂 VulnHub
 - [Empire Breakout](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout.md)
+- [Empire Breakout - EXTENDED](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout_Extended.md)
 - [The Planets: Earth](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth.md)
 - [The Planets: Earth - EXTENDED](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth_Extended.md)
 
