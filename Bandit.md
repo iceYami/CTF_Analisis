@@ -10,7 +10,7 @@
 
 > **Análisis técnico completo del wargame Bandit** - Metodología profesional de penetration testing aplicada a challenges de seguridad informática
 
-## 📊 Resumen Ejecutivo
+## 📊 Resumen
 
 ### Información del Entorno de Pruebas
 ```yaml
