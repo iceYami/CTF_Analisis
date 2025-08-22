@@ -1,4 +1,4 @@
-# CTF Hackviser
+# CTF Captain Linux
 
 <img src="https://hackviser.com/img/hackerbox-preview.webp" alt="Hackviser HackerBox" width="800"/>
 
