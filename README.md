@@ -31,6 +31,6 @@ Repositorio de análisis de CTF que he resuelto, con enlaces a sus writeups y re
 - [SQL Police Department](https://github.com/iceYami/SQL)
 
 ## 📂 Examenes
-- [Hackviserc Linux](https://github.com/iceYami/CTF_Analisis/blob/main/Hackviser.md)
+- [Hackviserc Linux](https://github.com/iceYami/CTF_Analisis/blob/main/HackviserLinux.md)
 
 ---
