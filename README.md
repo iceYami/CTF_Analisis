@@ -2,6 +2,7 @@
 
 # **ICEYAMI**
 ### `>> WELCOME TO THE DARK SIDE OF CYBERSECURITY <<`
+>...Nah, just kidding.
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&duration=1500&pause=800&color=FF0000&center=true&vCenter=true&multiline=true&width=900&height=150&lines=UNAUTHORIZED+ACCESS+GRANTED;SYSTEM+EXPLOITATION+IN+PROGRESS;ROOT%40EVERYWHERE%24%23;PWNING+THE+DIGITAL+WORLD;BLACK+HAT+OPERATIONS+ACTIVE;FEAR+THE+PENGUIN" alt="Typing SVG" />
 
