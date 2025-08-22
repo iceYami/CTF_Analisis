@@ -1,6 +1,6 @@
 # CTF Captain Linux
 
-<img src="https://m.media-amazon.com/images/I/81j7vf54EeL.jpg" width="300"/>
+<img src="https://m.media-amazon.com/images/I/81j7vf54EeL.jpg" width="200"/>
 
 
 ## Índice
