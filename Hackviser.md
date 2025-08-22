@@ -9,13 +9,40 @@
 6. [Herramientas y Comandos Útiles](#herramientas-y-comandos-útiles)
 7. [Troubleshooting](#troubleshooting)
 
-## Descripción de la CTF
+## Descripción
 - **Nombre**: Hackviser CTF
-- **Tipo**: Capture The Flag - Linux Privilege Escalation
+- **Tipo**: Capture The Flag - Linux System Exploration
 - **Usuario inicial**: captain
 - **Contraseña**: shadow
 - **Puerto SSH**: 22
+- **Sistema**: Debian GNU/Linux 5.10.0-27-amd64
 - **Objetivo**: Resolver preguntas 8-15 mediante exploración del sistema
+- **Característica especial**: Sistema sin `sudo` instalado
+
+### Credenciales de Acceso
+```bash
+Usuario: captain
+Contraseña: shadow
+Método de conexión: SSH
+IP: Variable según examen
+```
+
+### Estructura del Sistema
+```bash
+/home/captain/
+├── .bashrc
+├── .bash_logout  
+├── .bash_history (vacío)
+├── .profile
+├── .local/
+│   └── share/nano/
+├── files/
+│   └── .favorite_country.txt (archivo oculto)
+├── favorite_movie.txt (permisos especiales 0000)
+├── moment.txt (archivo de texto largo)
+├── emailpass.txt (archivo grande ~3.6MB)
+└── output.txt (vacío)
+```
 
 ### Credenciales de Acceso
 ```bash
@@ -81,33 +108,54 @@ find / -iname database.conf 2>/dev/null
 ```
 
 ### Pregunta 9: Permisos de archivo protegido
-**Objetivo**: Ver permisos de `favorite_movie.txt`
+**Objetivo**: Ver permisos y acceder al contenido de `favorite_movie.txt`
 
 **Comando principal**:
 ```bash
 ls -l /home/captain/favorite_movie.txt
 ```
 
-**Análisis de la salida**:
+**Análisis de la salida real**:
 ```
--rw-------  1 root root 25 fecha favorite_movie.txt
+---------- 1 captain captain 13 Mar 23  2024 /home/captain/favorite_movie.txt
 ```
-- `-rw-------`: Solo el propietario (root) puede leer/escribir
-- `root root`: Propietario y grupo root
-- **Resultado**: Permission denied para usuario captain
+- `----------`: **Permisos 0000** - Sin permisos para nadie (ni propietario)
+- `captain captain`: El propietario es captain (el usuario actual)
+- **Tamaño**: 13 bytes
+- **Problema especial**: Archivo sin permisos de lectura incluso para el propietario
 
-**Métodos alternativos para intentar acceso**:
+**SOLUCIÓN - Cambiar permisos como propietario**:
 ```bash
-# Verificar con diferentes comandos
+# Como eres propietario, puedes cambiar permisos
+chmod 644 /home/captain/favorite_movie.txt
+
+# Verificar el cambio
+ls -l /home/captain/favorite_movie.txt
+
+# Leer el contenido
+cat /home/captain/favorite_movie.txt
+```
+
+**Métodos alternativos si chmod no funciona**:
+```bash
+# Método 1: Copiar archivo (bypasses permisos de lectura)
+cp /home/captain/favorite_movie.txt /tmp/movie_copy.txt
+cat /tmp/movie_copy.txt
+
+# Método 2: Usar dd para bypass de bajo nivel
+dd if=/home/captain/favorite_movie.txt of=/tmp/movie_dd.txt 2>/dev/null
+cat /tmp/movie_dd.txt
+
+# Método 3: Verificar información detallada
 stat favorite_movie.txt
 file favorite_movie.txt
-getfacl favorite_movie.txt
-
-# Intentar lectura directa
-cat favorite_movie.txt
-head favorite_movie.txt
-tail favorite_movie.txt
 ```
+
+**Análisis técnico**:
+- Permisos `0000` impiden lectura incluso al propietario
+- Como captain ES el propietario, puede modificar permisos
+- El archivo tiene 13 bytes, sugiere contenido corto (nombre de película)
+- Este es un escenario común en CTFs para enseñar gestión de permisos
 
 ### Pregunta 10: UID del usuario specter
 **Objetivo**: Consultar User ID de specter
@@ -303,21 +351,123 @@ whereis comando
 /usr/bin/comando
 ```
 
+## Casos Especiales y Soluciones Avanzadas
+
+### Archivo con Permisos 0000 (Sin permisos para nadie)
+Este es un caso especial donde el archivo no tiene permisos de lectura ni siquiera para el propietario:
+
+```bash
+# Verificar situación
+ls -l archivo
+# Output: ---------- 1 user user size fecha archivo
+
+# Solución: Cambiar permisos como propietario
+chmod 644 archivo
+cat archivo
+
+# Alternativa: Copiar archivo
+cp archivo /tmp/copia_archivo
+cat /tmp/copia_archivo
+```
+
+### Análisis de Sistema sin sudo
+En sistemas donde `sudo` no está disponible:
+
+```bash
+# Verificar disponibilidad
+which sudo  # No output = no disponible
+
+# Buscar binarios SUID útiles
+find / -perm -4000 -type f 2>/dev/null | grep -E "(cat|less|more|vim|nano)"
+
+# Usar su para cambiar a root (si se conoce password)
+su -
+```
+
+### Exploración de Archivos Protegidos
+```bash
+# Ver metadatos sin leer contenido
+stat archivo_protegido
+file archivo_protegido
+
+# Buscar copias o backups
+find / -name "*nombre_archivo*" 2>/dev/null
+find / -name "*.bak" 2>/dev/null
+find / -name "*~" 2>/dev/null
+
+# Verificar logs que puedan contener información
+grep -r "string_relevante" /var/log/ 2>/dev/null
+```
+
+## Estrategia de Resolución
+
+### Orden Recomendado
+1. **Conectar y orientarse en el sistema**
+2. **Explorar estructura de directorios**
+3. **Identificar archivos clave**
+4. **Resolver preguntas simples primero**
+5. **Abordar problemas de permisos**
+6. **Documentar hallazgos**
+
 ### Notas Importantes
 - Siempre usar `2>/dev/null` para suprimir errores
 - Documentar todos los comandos utilizados
 - Verificar permisos antes de intentar acceso
 - Considerar múltiples enfoques para cada problema
 
-## Comandos de Verificación
+## Comandos de Verificación Final - Checklist Completo
 ```bash
-# Verificar todas las respuestas
+# === SECUENCIA DE COMANDOS PARA RESOLVER CTF HACKVISER ===
+
+# 8. Buscar archivo de configuración database.conf
 find / -name database.conf 2>/dev/null
-ls -l favorite_movie.txt
+
+# 9. Ver permisos y acceder a favorite_movie.txt (CASO ESPECIAL)
+ls -l /home/captain/favorite_movie.txt
+chmod 644 /home/captain/favorite_movie.txt  # Cambiar permisos como propietario
+cat /home/captain/favorite_movie.txt       # Leer contenido
+# Alternativa si chmod falla: cp /home/captain/favorite_movie.txt /tmp/movie.txt && cat /tmp/movie.txt
+
+# 10. Consultar UID del usuario specter
 id -u specter
-tail -n 1 emailpass.txt
-wc -w moment.txt
-cat files/.favorite_country.txt
-grep whoami@securemail.hv emailpass.txt
+
+# 11. Última línea de emailpass.txt
+tail -n 1 /home/captain/emailpass.txt
+
+# 12. Contar palabras de moment.txt
+wc -w /home/captain/moment.txt
+
+# 13. Ver archivo oculto favorite_country.txt
+cat /home/captain/files/.favorite_country.txt
+
+# 14. Buscar email específico en emailpass.txt
+grep whoami@securemail.hv /home/captain/emailpass.txt
+
+# 15. Localizar comando hello
 which hello
+
+# === VERIFICACIÓN ADICIONAL ===
+# Verificar estructura de archivos
+ls -la /home/captain/
+ls -la /home/captain/files/
+
+# Verificar permisos numéricos
+stat -c "%a %n" /home/captain/*
+
+# Información del sistema
+whoami
+id
+uname -a
 ```
+
+### Respuestas
+| Pregunta | Comando | Resultado Esperado |
+|----------|---------|-------------------|
+| 8 | `find / -name database.conf 2>/dev/null` | Ruta completa del archivo |
+| 9 | `chmod 644 favorite_movie.txt && cat favorite_movie.txt` | Nombre de película (13 caracteres) |
+| 10 | `id -u specter` | Número UID |
+| 11 | `tail -n 1 emailpass.txt` | Último email:password |
+| 12 | `wc -w moment.txt` | Número de palabras |
+| 13 | `cat files/.favorite_country.txt` | Nombre del país |
+| 14 | `grep whoami@securemail.hv emailpass.txt` | Línea con password |
+| 15 | `which hello` | Ruta del comando hello |
