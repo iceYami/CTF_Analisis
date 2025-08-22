@@ -4,7 +4,7 @@
 
 
 ## Índice
-1. [Información General](#información-general)
+1. [Descripción](#descripción)
 2. [Configuración Inicial](#configuración-inicial)
 3. [Análisis de Preguntas y Soluciones](#análisis-de-preguntas-y-soluciones)
 4. [Técnicas de Reconocimiento](#técnicas-de-reconocimiento)
@@ -462,3 +462,5 @@ whoami
 id
 uname -a
 ```
+
+---
