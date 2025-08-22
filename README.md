@@ -396,8 +396,6 @@ Competitors eliminated... Victory is mine.
 
 <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg" width="100%"/>
 
-<img src="https://profile-counter.glitch.me/iceYami/count.svg" alt="Visitor Count"/>
-
 ```
     ██╗  ██╗ █████╗  ██████╗██╗  ██╗    ████████╗██╗  ██╗███████╗    
     ██║  ██║██╔══██╗██╔════╝██║ ██╔╝    ╚══██╔══╝██║  ██║██╔════╝    
