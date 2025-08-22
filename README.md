@@ -313,6 +313,7 @@ Target acquired... Initiating digital genocide...
 | 💀 VICTIM | ⚔️ EXECUTION METHOD | 🩸 STATUS | 📜 DEATH CERTIFICATE |
 |-----------|--------------------|---------|--------------------|
 | `Captain Linux` | **System Annihilation** | 🚩 **EXECUTED PUBLICLY** | [💀 Death Report](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md) |
+| `Analisis Forense Linux RDP` | **Elimination** | 🚩 **COMPROMISED** | [💀 Death Report](https://github.com/iceYami/CTF_Analisis/blob/main/An%C3%A1lisis_Forense_Windows_RDP.md) |
 
 <div align="center">
 
