@@ -13,7 +13,7 @@
 7. [Troubleshooting](#troubleshooting)
 
 ## Descripción
-- **Nombre**: Hackviser CTF
+- **Nombre**: Captain
 - **Tipo**: Capture The Flag - Linux System Exploration
 - **Usuario inicial**: captain
 - **Contraseña**: shadow
@@ -420,7 +420,7 @@ grep -r "string_relevante" /var/log/ 2>/dev/null
 
 ## Comandos de Verificación Final - Checklist Completo
 ```bash
-# === SECUENCIA DE COMANDOS PARA RESOLVER CTF HACKVISER ===
+# === SECUENCIA DE COMANDOS PARA RESOLVER CTF ===
 
 # 8. Buscar archivo de configuración database.conf
 find / -name database.conf 2>/dev/null
