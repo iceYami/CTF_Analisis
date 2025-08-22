@@ -462,15 +462,3 @@ whoami
 id
 uname -a
 ```
-
-### Respuestas
-| Pregunta | Comando | Resultado Esperado |
-|----------|---------|-------------------|
-| 8 | `find / -name database.conf 2>/dev/null` | Ruta completa del archivo |
-| 9 | `chmod 644 favorite_movie.txt && cat favorite_movie.txt` | Nombre de película (13 caracteres) |
-| 10 | `id -u specter` | Número UID |
-| 11 | `tail -n 1 emailpass.txt` | Último email:password |
-| 12 | `wc -w moment.txt` | Número de palabras |
-| 13 | `cat files/.favorite_country.txt` | Nombre del país |
-| 14 | `grep whoami@securemail.hv emailpass.txt` | Línea con password |
-| 15 | `which hello` | Ruta del comando hello |
