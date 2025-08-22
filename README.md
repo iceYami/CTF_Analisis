@@ -31,6 +31,6 @@ Repositorio de análisis de CTF que he resuelto, con enlaces a sus writeups y re
 - [SQL Police Department](https://github.com/iceYami/SQL)
 
 ## 📂 Examenes
-- [CaptainLinux.md](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md)
+- [Captain Linux](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md)
 
 ---
