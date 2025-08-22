@@ -1,5 +1,8 @@
 # CTF Hackviser
 
+<img src="https://hackviser.com/img/hackerbox-preview.webp" alt="Hackviser HackerBox" width="800"/>
+
+
 ## Índice
 1. [Información General](#información-general)
 2. [Configuración Inicial](#configuración-inicial)
