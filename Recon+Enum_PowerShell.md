@@ -14,9 +14,9 @@
 
 ---
 
-## 📋 Información del Desafío
+## 📋 Información
 
-### 🔐 Credenciales de Acceso
+### 🔐 Credenciales
 ```yaml
 Credencial: password123!
 IP Objetivo: 172.20.19.36
@@ -24,7 +24,7 @@ SO Target: Windows Server 2019 (Build 17763)
 Entorno: Active Directory Domain
 ```
 
-### 🎯 Objetivos del CTF
+### 🎯 Objetivos
 Este CTF evalúa habilidades de **reconocimiento** y **enumeración** en entornos Windows utilizando PowerShell, cubriendo:
 
 - 🔍 **Reconocimiento del sistema** - Identificación de componentes y configuraciones
