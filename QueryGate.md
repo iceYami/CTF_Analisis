@@ -1,4 +1,4 @@
-# Informe de Penetración MySQL - Query Gate
+# Penetración MySQL - Query Gate
 
 ## Resumen Ejecutivo
 
