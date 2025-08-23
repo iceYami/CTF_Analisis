@@ -114,8 +114,8 @@
 
 | 🏆 **Achievement** | 📅 **Date** | 🎖️ **Recognition** | 📜 **Details** |
 |--------------------|-------------|-------------------|----------------|
+| Pentesting Pro Hacker Mentor | 2025 | 🥇 **Professional Level** | [🔗 Report](.) |
 | Women4Cyber CyberDrill 2025 | 2025 | 🥇 **Professional Level** | [🔗 Report](https://github.com/iceYami/CTF_Analisis/blob/main/Women4Cyber%20_ProfessionalCyberDrill25.md) |
-
 </div>
 
 ---
