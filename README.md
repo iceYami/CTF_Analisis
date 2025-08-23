@@ -146,29 +146,6 @@
 
 </div>
 
-## 💻 **DEVELOPMENT PROJECTS**
-
-<table>
-<tr>
-<td width="50%">
-
-### **Security Tools & Scripts**
-- 🐍 **Python Security Scripts** - Custom automation tools
-- 🗃️ **SQL Security Testing** - Database security assessment tools
-- 🔧 **CTF Utilities** - Helper scripts for competitions
-
-</td>
-<td width="50%">
-
-### **Knowledge Repositories**
-- 📚 **[CTF Analysis](https://github.com/iceYami/CTF_Analisis)** - Detailed writeups & methodologies
-- 🏋️ **[Codewars Solutions](https://github.com/iceYami/Codewars)** - Algorithm practice
-- 💾 **[SQL Projects](https://github.com/iceYami/SQL)** - Database security research
-
-</td>
-</tr>
-</table>
-
 ---
 
 ## 🤝 **REACH ME**
