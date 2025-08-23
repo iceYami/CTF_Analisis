@@ -27,330 +27,163 @@
 
 <div align="center">
 
-### 🚨 **SYSTEM BREACH STATISTICS** 🚨
+# **ICEYAMI**
+### `>> CYBERSECURITY SPECIALIST & CTF PLAYER <<`
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&duration=2000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=800&height=150&lines=PENETRATION+TESTING;CTF;CYBERSECURITY+RESEARCHER;DIGITAL+FORENSICS+ANALYST" />
 
 ```
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃                        🔴 THREAT ASSESSMENT 🔴                              ┃
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-┃ 💀 Systems Pwned:           ████████████████████████████████████ XX%        ┃
-┃ 🔓 Root Access Obtained:    ██████████████████████████████████   XX%         ┃  
-┃ 🏴‍☠️ Flags Captured:         ████████████████████████████████████ XX%         ┃
-┃ 💣 Exploits Weaponized:     ████████████████████████████████     XX%        ┃
-┃ ⚡ Zero-Days Discovered:    ████                                   XX%      ┃
-┃ 🚨 Security Bypassed:       ████████████████████████████████████ XX%        ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  🔐 CYBERSECURITY PROFESSIONAL  |  🏆 CTF COMPETITOR  |  🔍 SECURITY RESEARCHER     ║
+║                                                                                      ║
+║  "Turning curiosity into cybersecurity expertise, one challenge at a time"          ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 </div>
+
+---
+
+## 🎯 **ABOUT ME**
+
+I'm a passionate cybersecurity enthusiast focused on penetration testing, digital forensics, and competitive CTF challenges. My journey involves continuous learning through hands-on practice and real-world security scenarios.
+
+**Current Focus Areas:**
+- 🔍 Penetration Testing & Vulnerability Assessment  
+- 🏴‍☠️ Capture The Flag (CTF) Competitions
+- 💻 Digital Forensics & Incident Response
+- 🐍 Security Tool Development (Python/SQL)
+- 🌐 Web Application Security Testing
+
+---
+
+## 🛠️ **TECHNICAL ARSENAL**
 
 <table>
 <tr>
 <td width="50%">
 
-### 💀 **TOOLKIT**
-```bash
-root@darkside:~# cat /etc/arsenal
-```
-![Kali](https://img.shields.io/badge/KALI-LINUX-557C94?style=for-the-badge&logo=kali-linux&logoColor=white&color=000000)
-![Metasploit](https://img.shields.io/badge/METASPLOIT-FRAMEWORK-ED1C24?style=for-the-badge&color=FF0000)
-![Python](https://img.shields.io/badge/PYTHON-EXPLOITATION-3776AB?style=for-the-badge&logo=python&logoColor=white&color=darkgreen)
-![Burp](https://img.shields.io/badge/BURP-SUITE-FF6633?style=for-the-badge&color=orange)
-![Nmap](https://img.shields.io/badge/NMAP-RECONNAISSANCE-4682B4?style=for-the-badge&color=purple)
+### **Security Tools**
+![Kali](https://img.shields.io/badge/Kali%20Linux-557C94?style=flat-square&logo=kali-linux&logoColor=white)
+![Metasploit](https://img.shields.io/badge/Metasploit-ED1C24?style=flat-square)
+![Burp Suite](https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square)
+![Nmap](https://img.shields.io/badge/Nmap-4682B4?style=flat-square)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square)
 
 </td>
 <td width="50%">
 
-### ⚡ **INTRUSION METHODS**
-```bash
-$ sudo -l
-User iceyami may run the following commands on ALL hosts:
-(ALL : ALL) NOPASSWD: ALL
-```
-- **🔥 SQL Injection**
-- **💣 Buffer Overflow**  
-- **🎭 Social Engineering**
-- **🕷️ Web App Exploitation**
-- **🔐 Privilege Escalation**
-- **👻 Steganography**
+### **Programming & Databases**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
 </td>
 </tr>
 </table>
 
+---
+
+## 🏆 **CTF ACHIEVEMENTS & WRITEUPS**
+
 <div align="center">
 
-<img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="600"/>
+### 🚩 **COMPREHENSIVE CTF PORTFOLIO**
+*Complete analysis and solutions for various cybersecurity challenges*
+
+</div>
+
+| 🎯 **Challenge** | 🔧 **Category** | 🏟️ **Platform** | 📊 **Status** | 📖 **Writeup** |
+|------------------|-----------------|------------------|---------------|-----------------|
+| Empire Breakout | Buffer Overflow | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout.md) |
+| Empire Breakout Extended | Advanced Exploitation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout_Extended.md) |
+| The Planets: Earth | Privilege Escalation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth.md) |
+| The Planets: Earth Extended | System Compromise | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth_Extended.md) |
+| QueryGate | SQL Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/QueryGate.md) |
+| SecureCommand | Command Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/SecureCommand.md) |
+| Telnet Reconnaissance | Network Security | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Telnet_Recon.md) |
+| Bandit Wargames | SSH & Linux Skills | OverTheWire | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Bandit.md) |
+| Captain Linux | System Administration | CTF | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md) |
+| Windows RDP Forensics | Digital Forensics | CTF | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/An%C3%A1lisis_Forense_Windows_RDP.md) |
+| PowerShell Recon+Enum | Windows Security | CTF | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Recon%2BEnum_PowerShell.md) |
+
+---
+
+## 🏅 **CERTIFICATIONS & COMPETITIONS**
+
+<div align="center">
+
+| 🏆 **Achievement** | 📅 **Date** | 🎖️ **Recognition** | 📜 **Details** |
+|--------------------|-------------|-------------------|----------------|
+| Women4Cyber CyberDrill 2025 | 2025 | 🥇 **Professional Level** | [🔗 Report](https://github.com/iceYami/CTF_Analisis/blob/main/Women4Cyber%20_ProfessionalCyberDrill25.md) |
 
 </div>
 
 ---
 
-<div align="center">
+## 💻 **DEVELOPMENT PROJECTS**
 
-```
-██╗   ██╗██╗   ██╗██╗     ███╗   ██╗███████╗██████╗  █████╗ ██████╗ ██╗██╗     ██╗████████╗██╗███████╗███████╗
-██║   ██║██║   ██║██║     ████╗  ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██║██║     ██║╚══██╔══╝██║██╔════╝██╔════╝
-██║   ██║██║   ██║██║     ██╔██╗ ██║█████╗  ██████╔╝███████║██████╔╝██║██║     ██║   ██║   ██║█████╗  ███████╗
-╚██╗ ██╔╝██║   ██║██║     ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║██╔══██╗██║██║     ██║   ██║   ██║██╔══╝  ╚════██║
- ╚████╔╝ ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║██████╔╝██║███████╗██║   ██║   ██║███████╗███████║
-  ╚═══╝   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝╚══════╝╚═╝   ╚═╝   ╚═╝╚══════╝╚══════╝
-```
+<table>
+<tr>
+<td width="50%">
 
-### 🚨 **DATABASE OF COMPROMISED SYSTEMS** 🚨
+### **Security Tools & Scripts**
+- 🐍 **Python Security Scripts** - Custom automation tools
+- 🗃️ **SQL Security Testing** - Database security assessment tools
+- 🔧 **CTF Utilities** - Helper scripts for competitions
 
-</div>
+</td>
+<td width="50%">
 
-<details>
-<summary><b>🏴‍☠️ VulnHub Underground</b> <code>[Black Market Challenges]</code> 💀</summary>
-<br>
+### **Knowledge Repositories**
+- 📚 **[CTF Analysis](https://github.com/iceYami/CTF_Analisis)** - Detailed writeups & methodologies
+- 🏋️ **[Codewars Solutions](https://github.com/iceYami/Codewars)** - Algorithm practice
+- 💾 **[SQL Projects](https://github.com/iceYami/SQL)** - Database security research
 
-```
-root@iceyami:~# ls -la /root/vulnhub_trophies/
-```
-
-| 🎯 TARGET | ⚔️ ATTACK VECTOR | 💀 STATUS | 📜 EVIDENCE |
-|-----------|------------------|-----------|-------------|
-| `Empire Breakout` | **Buffer Overflow** | 🔥 **SYSTEM DESTROYED** | [💀 Death Note](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout.md) |
-| `Empire Breakout Extended` | **Advanced Persistence** | 🔥 **BACKDOOR PLANTED** | [💀 Death Note](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout_Extended.md) |
-| `The Planets: Earth` | **Privilege Escalation** | 🔥 **WORLD DOMINATED** | [💀 Death Note](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth.md) |
-| `The Planets: Earth Extended` | **Total System Takeover** | 🔥 **PLANET CONQUERED** | [💀 Death Note](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth_Extended.md) |
-
-<div align="center">
-
-<img src="https://media.giphy.com/media/l41YedIbenuBH6ljO/giphy.gif" width="400"/>
-
-**"Another day, another system compromised"**
-
-</div>
-
-</details>
-
-<details>
-<summary><b>🕳️ Over The Wire Darknet</b> <code>[SSH Underground Network]</code> ⚡</summary>
-<br>
-
-```bash
-iceyami@bandit:~$ history | tail -1
-ssh-keygen -t rsa -b 4096 -f ~/.ssh/master_key
-```
-
-| 🎯 TARGET | ⚔️ ATTACK VECTOR | 💀 STATUS | 📜 EVIDENCE |
-|-----------|------------------|-----------|-------------|
-| `Bandit Fortress` | **SSH Key Exploitation** | 🔓 **FORTRESS BREACHED** | [💀 Death Note](https://github.com/iceYami/CTF_Analisis/blob/main/Bandit.md) |
-
-<div align="center">
-
-<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400"/>
-
-**"The fortress walls mean nothing to me"**
-
-</div>
-
-</details>
-
-<details>
-<summary><b>🎭 HackTheBox Black Market</b> <code>[Elite Underground]</code> 💣</summary>
-<br>
-
-```bash
-root@htb:~# echo "Preparing nuclear arsenal..." 
-```
-
-| 🎯 TARGET | ⚔️ ATTACK VECTOR | 💀 STATUS | 📜 EVIDENCE |
-|-----------|------------------|-----------|-------------|
-| `Loading Nuclear Codes...` | **Zero-Day Development** | 🔥 **WEAPONIZING EXPLOITS** | 💀 Soon™ |
-
-<div align="center">
-
-<img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="400"/>
-
-**"Every system has a weakness... I just find them faster"**
-
-</div>
-
-</details>
-
-<details>
-<summary><b>🎪 TryHackMe Dark Carnival</b> <code>[Red Team Underground]</code> 🩸</summary>
-<br>
-
-```bash
-red_team@thm:~$ ./deploy_malware.sh --stealth --persistent
-```
-
-| 🎯 TARGET | ⚔️ ATTACK VECTOR | 💀 STATUS | 📜 EVIDENCE |
-|-----------|------------------|-----------|-------------|
-| `Compiling Darkness...` | **Advanced Persistent Threats** | ⚡ **MALWARE DEPLOYMENT** | 💀 Soon™ |
-
-<div align="center">
-
-<img src="https://media.giphy.com/media/YQitE4YNQNahy/giphy.gif" width="400"/>
-
-**"Welcome to the carnival of digital nightmares"**
-
-</div>
-
-</details>
-
-<details>
-<summary><b>🧪 The Underground Lab</b> <code>[Black Hat Research Division]</code> ☢️</summary>
-<br>
-
-```bash
-root@lab:~# gcc -o zero_day exploit.c && ./zero_day --silent --backdoor
-```
-
-| 🎯 TARGET | ⚔️ ATTACK VECTOR | 💀 STATUS | 📜 EVIDENCE |
-|-----------|------------------|-----------|-------------|
-| `Developing Bio-Weapons...` | **Zero-Day Manufacturing** | 💣 **WEAPONIZATION PROCESS** | 💀 Soon™ |
-
-<div align="center">
-
-**"In my lab, I create digital nightmares"**
-
-</div>
-
-</details>
+</td>
+</tr>
+</table>
 
 ---
 
-<div align="center">
-
-```
- ██████╗ ██████╗ ██████╗ ███████╗    ██╗    ██╗ █████╗ ██████╗ ███████╗ █████╗ ██████╗ ███████╗
-██╔════╝██╔═══██╗██╔══██╗██╔════╝    ██║    ██║██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔════╝
-██║     ██║   ██║██║  ██║█████╗      ██║ █╗ ██║███████║██████╔╝█████╗  ███████║██████╔╝█████╗  
-██║     ██║   ██║██║  ██║██╔══╝      ██║███╗██║██╔══██║██╔══██╗██╔══╝  ██╔══██║██╔══██╗██╔══╝  
-╚██████╗╚██████╔╝██████╔╝███████╗    ╚███╔███╔╝██║  ██║██║  ██║██║     ██║  ██║██║  ██║███████╗
- ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝     ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
-```
-
-### 🚨 **DIGITAL WEAPONS MANUFACTURING** 🚨
-
-</div>
-
-<details>
-<summary><b>🐍 Python Malware Factory</b> <code>[Advanced Payload Development]</code> ☠️</summary>
-<br>
-
-```python
-#!/usr/bin/env python3
-# WARNING: Weaponized code ahead
-class DigitalDestruction:
-    def __init__(self):
-        self.target_acquired = True
-        self.stealth_mode = "MAXIMUM"
-```
-
-| 🎯 PROJECT | ⚔️ WEAPON TYPE | 💀 STATUS | 📜 ARSENAL |
-|------------|----------------|-----------|------------|
-| `Python Venom` | **Advanced Algorithms** | 🔥 **WEAPONIZED** | [💀 Repository](https://github.com/iceYami/Codewars) |
+## 📊 **GITHUB STATISTICS**
 
 <div align="center">
 
-<img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="400"/>
+<img src="https://github-readme-stats.vercel.app/api?username=iceYami&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
 
-**"My code doesn't just work... it destroys"**
-
-</div>
-
-</details>
-
-<details>
-<summary><b>💉 SQL Injection Arsenal</b> <code>[Database Destruction Unit]</code> 🗡️</summary>
-<br>
-
-```sql
--- CAUTION: Destructive queries ahead
-SELECT * FROM victim_data WHERE '1'='1'; 
-DROP DATABASE security; --
-INSERT INTO backdoors VALUES ('iceyami_was_here');
-```
-
-| 🎯 PROJECT | ⚔️ WEAPON TYPE | 💀 STATUS | 📜 ARSENAL |
-|------------|----------------|-----------|------------|
-| `LaSQL Injector` | **Database Poisoning** | 💉 **CONTAMINATED** | [💀 Repository](https://github.com/iceYami/SQL) |
-| `SQL Police Backdoor` | **Authority Bypass** | 💉 **COMPROMISED** | [💀 Repository](https://github.com/iceYami/SQL) |
-
-<div align="center">
-
-<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="400"/>
-
-**"Every database bleeds the same color... binary"**
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=iceYami&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
 </div>
-
-</details>
 
 ---
 
+## 🤝 **CONNECT WITH ME**
+
 <div align="center">
 
-```
-███████╗██████╗ ███████╗ ██████╗██╗ █████╗ ██╗         ███████╗ ██████╗ ██████╗  ██████╗███████╗███████╗
-██╔════╝██╔══██╗██╔════╝██╔════╝██║██╔══██╗██║         ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
-███████╗██████╔╝█████╗  ██║     ██║███████║██║         █████╗  ██║   ██║██████╔╝██║     █████╗  ███████╗
-╚════██║██╔═══╝ ██╔══╝  ██║     ██║██╔══██║██║         ██╔══╝  ██║   ██║██╔══██╗██║     ██╔══╝  ╚════██║
-███████║██║     ███████╗╚██████╗██║██║  ██║███████╗    ██║     ╚██████╔╝██║  ██║╚██████╗███████╗███████║
-╚══════╝╚═╝     ╚══════╝ ╚═════╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝╚══════╝
-```
-
-### 🏴‍☠️ **BLACK OPERATIONS DIVISION** 🏴‍☠️
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iceYami)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iceyami/)
 
 </div>
 
-<details>
-<summary><b>💀 Solo Death Matches</b> <code>[No Mercy Mode]</code> ⚔️</summary>
-<br>
+<div align="center">
 
-```bash
-iceyami@battlefield:~$ ./exterminate.sh --target=all --mercy=false
-Target acquired... Initiating digital genocide...
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  🔐 "Security is not a product, but a process"                  │
+│     - Dedicated to continuous learning and improvement          │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-| 💀 VICTIM | ⚔️ EXECUTION METHOD | 🩸 STATUS | 📜 DEATH CERTIFICATE |
-|-----------|--------------------|---------|--------------------|
-| `Captain Linux` | **System Annihilation** | 🚩 **EXECUTED PUBLICLY** | [💀 Death Report](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md) |
-| `Analisis Forense Linux RDP` | **Elimination** | 🚩 **COMPROMISED** | [💀 Death Report](https://github.com/iceYami/CTF_Analisis/blob/main/An%C3%A1lisis_Forense_Windows_RDP.md) |
-| `Recon+Enum Powershell` | **Hunted** | 🚩 **COMPROMISED** | [💀 Death Report](https://github.com/iceYami/CTF_Analisis/blob/main/Recon%2BEnum_PowerShell.md) |
+⭐ **Feel free to explore my repositories and reach out for collaboration!** ⭐
 
-<div align="center">
-
-<img src="https://media.giphy.com/media/l0HlFZ3c4NENSLQRi/giphy.gif" width="400"/>
-
-**"I don't just win... I obliterate"**
+![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 </div>
-
-</details>
-
-<details>
-<summary><b>👑 Certification Domination</b> <code>[Professional Annihilation]</code> 🔥</summary>
-<br>
-
-```bash
-root@exam:~# ./destroy_competition.py --mode=ruthless --show_no_mercy=true
-Competitors eliminated... Victory is mine.
-```
-
-| 🎯 BATTLEFIELD | ⚔️ DESTRUCTION METHOD | 👑 STATUS | 📜 VICTORY SCROLL |
-|----------------|----------------------|----------|-------------------|
-| `Women4Cyber CyberDrill 2025` | **Complete Domination** | 👑 **EMPEROR OF CYBER** | [💀 Victory Report](https://github.com/iceYami/CTF_Analisis/blob/main/Women4Cyber%20_ProfessionalCyberDrill25.md) |
-
-<div align="center">
-
-<img src="https://media.giphy.com/media/26u4cqiYI30juCOGY/giphy.gif" width="400"/>
-
-**"Bow before your digital overlord"**
-
-</div>
-
-</details>
-
----
-
-<div align="center">
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
