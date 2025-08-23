@@ -102,9 +102,9 @@
 | SecureCommand | Command Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/SecureCommand.md) |
 | Telnet Reconnaissance | Network Security | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Telnet_Recon.md) |
 | Bandit Wargames | SSH & Linux Skills | OverTheWire | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Bandit.md) |
-| Captain Linux | System Administration | CTF | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md) |
-| Windows RDP Forensics | Digital Forensics | CTF | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/An%C3%A1lisis_Forense_Windows_RDP.md) |
-| PowerShell Recon+Enum | Windows Security | CTF | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Recon%2BEnum_PowerShell.md) |
+| Captain Linux | System Administration | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md) |
+| Windows RDP Forensics | Digital Forensics | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/An%C3%A1lisis_Forense_Windows_RDP.md) |
+| PowerShell Recon+Enum | Windows Security | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Recon%2BEnum_PowerShell.md) |
 
 ---
 
