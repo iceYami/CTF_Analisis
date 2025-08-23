@@ -1708,8 +1708,6 @@ Tools & Frameworks:
 
 ### 🎉 **¡Felicitaciones por completar el CTF!**
 
-*Has demostrado competencia en técnicas fundamentales de reconocimiento y enumeración con PowerShell. Estas habilidades son la base para el análisis avanzado de seguridad en entornos Windows.*
-
 ---
 
 **⭐ Si este manual te fue útil, considera darle una estrella en GitHub ⭐**
