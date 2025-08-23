@@ -1716,20 +1716,8 @@ Tools & Frameworks:
 
 ---
 
-### 📝 **Changelog**
-```
-v1.0.0 - 2024-08-23
-├── ✨ Manual inicial completo
-├── 📋 11 preguntas resueltas paso a paso  
-├── 🛠️ Scripts de automatización incluidos
-├── 📊 Análisis detallado de resultados
-└── 📚 Recursos adicionales y próximos pasos
-```
-
----
-
-**Creado con ❤️ para la comunidad de ciberseguridad**
-
-*"La práctica constante es el camino hacia la maestría en ciberseguridad"*
+**Creado con ❤️ para la comunidad**
 
 </div>
+
+---
