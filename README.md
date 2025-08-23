@@ -313,6 +313,7 @@ Target acquired... Initiating digital genocide...
 |-----------|--------------------|---------|--------------------|
 | `Captain Linux` | **System Annihilation** | 🚩 **EXECUTED PUBLICLY** | [💀 Death Report](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md) |
 | `Analisis Forense Linux RDP` | **Elimination** | 🚩 **COMPROMISED** | [💀 Death Report](https://github.com/iceYami/CTF_Analisis/blob/main/An%C3%A1lisis_Forense_Windows_RDP.md) |
+| `Recon+Enum Powershell` | **Hunted** | 🚩 **COMPROMISED** | [💀 Death Report](https://github.com/iceYami/CTF_Analisis/blob/main/Recon%2BEnum_PowerShell.md) |
 
 <div align="center">
 
