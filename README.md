@@ -94,9 +94,9 @@
 
 | 🎯 **Challenge** | 🔧 **Category** | 🏟️ **Platform** | 📊 **Status** | 📖 **Writeup** |
 |------------------|-----------------|------------------|---------------|-----------------|
-| Empire Breakout | Buffer Overflow | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout.md) |
-| Empire Breakout Extended | Advanced Exploitation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout_Extended.md) |
-| The Planets: Earth | Privilege Escalation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth.md) |
+| Empire Breakout | Exploitation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout.md) |
+| Empire Breakout Extended | Exploitation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout_Extended.md) |
+| The Planets: Earth | System Compromise | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth.md) |
 | The Planets: Earth Extended | System Compromise | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth_Extended.md) |
 | QueryGate | SQL Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/QueryGate.md) |
 | SecureCommand | Command Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/SecureCommand.md) |
@@ -140,13 +140,24 @@
 |------------------|-----------------|------------------|---------------|-----------------|
 | CTF Analisis | Pentesting writeups & methodologies| General | ✅ Improving | [📋 Analysis](https://github.com/iceYami/CTF_Analisis) |
 | Python Quests | Programming | Codewars | ✅ Improving | [📋 Analysis](https://github.com/iceYami/Codewars) |
+| Python Quests | Programming | Codigo Facilito | ✅ Completed | [📋 Analysis](https://github.com/iceYami/Python-Projects) |
 | SQL Quests | Programming | Codewars | ✅ Improving | [📋 Analysis](https://github.com/iceYami/Codewars) |
-| SQL Quests | Programming | SQL Police Department | ✅ Improving | [📋 Analysis](https://github.com/iceYami/SQL) |
-| SQL Quests | Programming | LaSQL | ✅ Improving | [📋 Analysis](https://github.com/iceYami/SQL) |
+| SQL Quests | Programming | SQL Police Department | ✅ Completed | [📋 Analysis](https://github.com/iceYami/SQL) |
+| SQL Quests | Programming | LaSQL | ✅ Completed | [📋 Analysis](https://github.com/iceYami/SQL) |
 
 </div>
 
 ---
+
+## 🏃 **BOUNTY HUNTING**
+
+<div align="center">
+
+| 🏆 **Achievement** | 📅 **Date** | 🎖️ **Recognition** | 📜 **Details** |
+|--------------------|-------------|-------------------|----------------|
+| - |  | 🥇 **-** | [🔗 Report](.) |
+
+</div>
 
 ## 🤝 **REACH ME**
 
