@@ -108,7 +108,7 @@
 
 ---
 
-## 🏅 **COMPETITIONS**
+## 🏃 **COMPETITIONS**
 
 <div align="center">
 
