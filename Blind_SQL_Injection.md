@@ -15,7 +15,6 @@ Este informe documenta el análisis exhaustivo y explotación exitosa de una vul
 ## 1. Información del Objetivo
 
 ### 1.1 Detalles del Laboratorio
-- **URL**: https://cunning-polaris.europe1.hackviser.space/
 - **Tipo de Aplicación**: Tienda en línea (e-commerce)
 - **Funcionalidad Vulnerable**: Campo de búsqueda de productos
 - **Método HTTP**: POST
