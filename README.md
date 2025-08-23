@@ -46,10 +46,6 @@
 
 ---
 
-## 🎯 **ABOUT ME**
-
-I'm a passionate cybersecurity enthusiast focused on penetration testing, digital forensics, and competitive CTF challenges. My journey involves continuous learning through hands-on practice and real-world security scenarios.
-
 **Current Focus Areas:**
 - 🔍 Penetration Testing & Vulnerability Assessment  
 - 🏴‍☠️ Capture The Flag (CTF) Competitions
@@ -112,13 +108,25 @@ I'm a passionate cybersecurity enthusiast focused on penetration testing, digita
 
 ---
 
-## 🏅 **CERTIFICATIONS & COMPETITIONS**
+## 🏅 **COMPETITIONS**
 
 <div align="center">
 
 | 🏆 **Achievement** | 📅 **Date** | 🎖️ **Recognition** | 📜 **Details** |
 |--------------------|-------------|-------------------|----------------|
 | Women4Cyber CyberDrill 2025 | 2025 | 🥇 **Professional Level** | [🔗 Report](https://github.com/iceYami/CTF_Analisis/blob/main/Women4Cyber%20_ProfessionalCyberDrill25.md) |
+
+</div>
+
+---
+
+## 🏅 **CERTIFICATIONS**
+
+<div align="center">
+
+| 🏆 **Achievement** | 📅 **Date** | 🎖️ **Recognition** | 📜 **Details** |
+|--------------------|-------------|-------------------|----------------|
+| - |  | 🥇 **-** | [🔗 Report](.) |
 
 </div>
 
@@ -149,19 +157,7 @@ I'm a passionate cybersecurity enthusiast focused on penetration testing, digita
 
 ---
 
-## 📊 **GITHUB STATISTICS**
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=iceYami&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=iceYami&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-
-</div>
-
----
-
-## 🤝 **CONNECT WITH ME**
+## 🤝 **REACH ME**
 
 <div align="center">
 
@@ -181,11 +177,11 @@ I'm a passionate cybersecurity enthusiast focused on penetration testing, digita
 
 ⭐ **Feel free to explore my repositories and reach out for collaboration!** ⭐
 
-![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
-
 </div>
 
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
+
+</div>
 
 ```
  ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗  ██████╗████████╗    ████████╗██╗  ██╗███████╗    
