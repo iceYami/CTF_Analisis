@@ -1455,24 +1455,6 @@ Aspectos Evaluados:
 <div align="center">
 
 ---
-### 🏆 CERTIFICADO CTF
-**PowerShell Reconnaissance & Enumeration**
-
-*Se certifica que se ha completado exitosamente el desafío CTF de reconocimiento y enumeración con PowerShell, demostrando dominio en:*
-
-✅ **Administración de PowerShell**  
-✅ **Enumeración de Active Directory**  
-✅ **Análisis de Permisos de Archivos**  
-✅ **Evaluación de Configuraciones de Seguridad**  
-✅ **Metodología de Reconocimiento Sistemático**
-
-**Puntuación:** 11/11 (100%)  
-**Fecha de Finalización:** $(Get-Date -Format "yyyy-MM-dd")  
-**Nivel de Dificultad:** Intermedio  
-
-*"Excellence in Windows System Analysis and PowerShell Mastery"*
-
----
 
 </div>
 
