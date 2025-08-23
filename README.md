@@ -132,6 +132,20 @@
 
 ---
 
+## 🏅 **DEVELOPMENT**
+
+<div align="center">
+
+| 🎯 **Challenge** | 🔧 **Category** | 🏟️ **Platform** | 📊 **Status** | 📖 **Writeup** |
+|------------------|-----------------|------------------|---------------|-----------------|
+| CTF Analisis | Pentesting writeups & methodologies| General | ✅ Improving | [📋 Analysis](https://github.com/iceYami/CTF_Analisis) |
+| Python Quests | Programming | Codewars | ✅ Improving | [📋 Analysis](https://github.com/iceYami/Codewars) |
+| SQL Quests | Programming | Codewars | ✅ Improving | [📋 Analysis](https://github.com/iceYami/Codewars) |
+| SQL Quests | Programming | SQL Police Department | ✅ Improving | [📋 Analysis](https://github.com/iceYami/SQL) |
+| SQL Quests | Programming | LaSQL | ✅ Improving | [📋 Analysis](https://github.com/iceYami/SQL) |
+
+</div>
+
 ## 💻 **DEVELOPMENT PROJECTS**
 
 <table>
