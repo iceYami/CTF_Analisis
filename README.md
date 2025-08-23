@@ -207,8 +207,6 @@ root@lab:~# gcc -o zero_day exploit.c && ./zero_day --silent --backdoor
 
 <div align="center">
 
-<img src="https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif" width="400"/>
-
 **"In my lab, I create digital nightmares"**
 
 </div>
