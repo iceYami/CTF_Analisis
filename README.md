@@ -143,7 +143,7 @@
 | Python Quests | Programming | Codigo Facilito | ✅ Completed | [📋 Analysis](https://github.com/iceYami/Python-Projects) |
 | SQL Quests | Programming | Codewars | ✅ Improving | [📋 Analysis](https://github.com/iceYami/Codewars) |
 | SQL Quests | Programming | SQL Police Department | ✅ Completed | [📋 Analysis](https://github.com/iceYami/SQL) |
-| SQL Quests | Programming | LaSQL | ✅ Completed | [📋 Analysis](https://github.com/iceYami/SQL) |
+| SQL Quests | Programming | LostatSQL | ✅ Completed | [📋 Analysis](https://github.com/iceYami/SQL) |
 
 </div>
 
