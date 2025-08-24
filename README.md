@@ -1,3 +1,6 @@
+## 『 CYBER RANGE TRAINING GROUNDS 』
+<div align="center">
+
 <div align="center">
 
 # **ICEYAMI**
@@ -159,17 +162,6 @@
 
 </div>
 
-## 🤝 **REACH ME**
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iceYami)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iceyami/)
-
-</div>
-
-<div align="center">
-
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │  🔐 "Security is not a product, but a process"                  │
@@ -205,10 +197,32 @@
 
 ⚠️ **WARNING: All communications are monitored and encrypted** ⚠️
 
-[![GitHub](https://img.shields.io/badge/DARKWEB-GITHUB-000?style=for-the-badge&logo=github&logoColor=red)](https://github.com/iceYami)
-[![LinkedIn](https://img.shields.io/badge/ENCRYPTED-LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iceyami/)
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-PROFESSIONAL_NETWORK-0077B5?style=for-the-badge&logo=linkedin&logoColor=00D4FF&labelColor=0A66C2)](https://www.linkedin.com/in/iceyami/)
+[![GitHub](https://img.shields.io/badge/GitHub-SECURITY_ARSENAL-181717?style=for-the-badge&logo=github&logoColor=00D4FF&labelColor=000000)](https://github.com/iceyami)
+[![Stack Overflow](https://img.shields.io/badge/STACK_OVERFLOW-TECHNICAL_SOLUTIONS-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=00D4FF&labelColor=FF8C00)](https://stackoverflow.com/users/iceyami)
+[![Medium](https://img.shields.io/badge/MEDIUM-SECURITY_RESEARCH-00AB6C?style=for-the-badge&logo=medium&logoColor=FFFFFF&labelColor=000000)](https://medium.com/@iceyami)
+
+</div>
+
 
 <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="500"/>
+
+</div>
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  🔐 "Security is not a product, but a process"                  │
+│     - Dedicated to continuous learning and improvement          │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
+
+</div>
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
@@ -242,3 +256,7 @@
     ██╔═══╝ ██║     ██╔══██║██║╚██╗██║██╔══╝     ██║                  
     ██║     ███████╗██║  ██║██║ ╚████║███████╗   ██║                  
     ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═
+
+```
+
+---
