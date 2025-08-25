@@ -11,14 +11,14 @@
 
 ```
  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-█                                                                              █
+█                                                                                █
 █  ⚠️  WARNING: UNAUTHORIZED INTRUSION DETECTED ⚠️                              █
-█  🔒 SYSTEM STATUS: COMPROMISED                                               █
-█  💀 SECURITY LEVEL: NULL                                                     █
-█  🏴‍☠️ HACKER STATUS: ACTIVE                                                    █
-█                                                                              █
-█  "In a world full of locked doors, I am the master key" - iceyami           █
-█                                                                              █
+█  🔒 SYSTEM STATUS: COMPROMISED                                                █
+█  💀 SECURITY LEVEL: NULL                                                      █
+█  🏴‍☠️ HACKER STATUS: ACTIVE                                                     █
+█                                                                               █
+█  "In a world full of locked doors, why don't become the master key?"          █
+█                                                                               █
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ```
 
