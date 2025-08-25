@@ -1,4 +1,4 @@
-# WiFi Penetration Testing CTF
+# Penetration Testing CTF
 
 ## Index
 
