@@ -119,6 +119,8 @@
 |--------------------|-------------|-------------------|----------------|
 | Pentesting Pro Hacker Mentor | 2025 | 🥇 **Professional Level** | [🔗 Report](.) |
 | Women4Cyber CyberDrill 2025 | 2025 | 🥇 **Professional Level** | [🔗 Report](https://github.com/iceYami/CTF_Analisis/blob/main/Women4Cyber%20_ProfessionalCyberDrill25.md) |
+| WiFiChallenge Lab | 2025 | 🥇 **Professional Level** | [🔗 Report](https://github.com/iceYami/CTF_Analisis/blob/main/WifiChallenge_Pentest.md) |
+
 </div>
 
 ---
