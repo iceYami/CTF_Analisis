@@ -1,5 +1,4 @@
-# WiFiChallenge Lab v2.0
-WiFi Penetration Testing
+# WiFi Penetration Testing CTF
 
 ## Index
 
