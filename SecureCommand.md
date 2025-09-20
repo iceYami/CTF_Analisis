@@ -1,6 +1,6 @@
-# Informe Técnico de Penetración - SECURE COMMAND
+SECURE COMMAND
 
-## Resumen Ejecutivo
+## Resumen
 
 ### Información General
 - **Objetivo**: 172.20.4.179
@@ -599,7 +599,3 @@ sudo -l
 - SANS Penetration Testing: https://www.sans.org/cyber-security-courses/
 
 ---
-
-*Documento generado el: [Fecha]*  
-*Versión: 1.0*  
-*Clasificación: Confidencial*
