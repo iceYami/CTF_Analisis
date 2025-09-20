@@ -95,74 +95,128 @@
 
 </div>
 
-| 🎯 **Challenge** | 🔧 **Category** | 🏟️ **Platform** | 📊 **Status** | 📖 **Writeup** |
-|------------------|-----------------|------------------|---------------|-----------------|
-| Empire Breakout | Exploitation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout.md) |
-| Empire Breakout Extended | Exploitation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout_Extended.md) |
-| The Planets: Earth | System Compromise | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth.md) |
-| The Planets: Earth Extended | System Compromise | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth_Extended.md) |
-| QueryGate | SQL Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/QueryGate.md) |
-| SecureCommand | Command Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/SecureCommand.md) |
-| Telnet Reconnaissance | Network Security | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Telnet_Recon.md) |
-| Bandit Wargames | SSH & Linux Skills | OverTheWire | ✅ Improving | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Bandit.md) |
-| Captain Linux | System Administration | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md) |
-| Windows RDP Forensics | Digital Forensics | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/An%C3%A1lisis_Forense_Windows_RDP.md) |
-| PowerShell Recon+Enum | Windows Security | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Recon%2BEnum_PowerShell.md) |
-| ProFTPD 1.3.5 Remote Code Execution (CVE-2015-3306).md | CVE | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/ProFTPD%201.3.5%20Remote%20Code%20Execution%20(CVE-2015-3306).md) |
----
+# 🎯 **CTF & CYBERSECURITY PORTFOLIO**
 
-## 🏃 **COMPETITIONS**
-
-<div align="center">
-
-| 🏆 **Achievement** | 📅 **Date** | 🎖️ **Recognition** | 📜 **Details** |
-|--------------------|-------------|-------------------|----------------|
-| Pentesting Pro Hacker Mentor | 2025 | 🥇 **Professional Level** | [🔗 Report](.) |
-| Women4Cyber CyberDrill 2025 | 2025 | 🥇 **Professional Level** | [🔗 Report](https://github.com/iceYami/CTF_Analisis/blob/main/Women4Cyber%20_ProfessionalCyberDrill25.md) |
-| WiFiChallenge Lab | 2025 | 🥇 **Professional Level** | [🔗 Report](https://github.com/iceYami/CTF_Analisis/blob/main/WifiChallenge_Pentest.md) |
-
-</div>
-
----
-
-## 🏅 **CERTIFICATIONS**
-
-<div align="center">
-
-| 🏆 **Achievement** | 📅 **Date** | 🎖️ **Recognition** | 📜 **Details** |
-|--------------------|-------------|-------------------|----------------|
-| - |  | 🥇 **-** | [🔗 Report](.) |
-
-</div>
-
----
-
-## 🏅 **DEVELOPMENT**
+## 🔥 **CAPTURE THE FLAG CHALLENGES**
 
 <div align="center">
 
 | 🎯 **Challenge** | 🔧 **Category** | 🏟️ **Platform** | 📊 **Status** | 📖 **Writeup** |
 |------------------|-----------------|------------------|---------------|-----------------|
-| CTF Analisis | Pentesting writeups & methodologies| General | ✅ Improving | [📋 Analysis](https://github.com/iceYami/CTF_Analisis) |
-| Python Quests | Programming | Codewars | ✅ Improving | [📋 Analysis](https://github.com/iceYami/Codewars) |
-| Python Quests | Programming | Codigo Facilito | ✅ Completed | [📋 Analysis](https://github.com/iceYami/Python-Projects) |
-| SQL Quests | Programming | Codewars | ✅ Improving | [📋 Analysis](https://github.com/iceYami/Codewars) |
-| SQL Quests | Programming | SQL Police Department | ✅ Completed | [📋 Analysis](https://github.com/iceYami/SQL) |
-| SQL Quests | Programming | LostatSQL | ✅ Completed | [📋 Analysis](https://github.com/iceYami/SQL) |
+| Empire Breakout | 🛡️ Exploitation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout.md) |
+| Empire Breakout Extended | 🛡️ Advanced Exploitation | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Empire_Breakout_Extended.md) |
+| The Planets: Earth | 💻 System Compromise | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth.md) |
+| The Planets: Earth Extended | 💻 Advanced System Compromise | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Planets_Earth_Extended.md) |
+| QueryGate | 💉 SQL Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/QueryGate.md) |
+| SecureCommand | ⚡ Command Injection | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/SecureCommand.md) |
+| Telnet Reconnaissance | 🔍 Network Security | VulnHub | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Telnet_Recon.md) |
+| Bandit Wargames | 🐧 SSH & Linux Skills | OverTheWire | 🔄 Improving | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Bandit.md) |
+| Captain Linux | 🖥️ System Administration | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/CaptainLinux.md) |
+| Windows RDP Forensics | 🔬 Digital Forensics | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/An%C3%A1lisis_Forense_Windows_RDP.md) |
+| PowerShell Recon+Enum | 🪟 Windows Security | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/Recon%2BEnum_PowerShell.md) |
+| ProFTPD RCE (CVE-2015-3306) | 🚨 CVE Exploitation | Hackviser | ✅ Completed | [📋 Analysis](https://github.com/iceYami/CTF_Analisis/blob/main/ProFTPD%201.3.5%20Remote%20Code%20Execution%20(CVE-2015-3306).md) |
+
+</div>
+
+### 📊 **Challenge Statistics**
+- **Total Completed**: 11/12 (92%) 🎯
+- **Currently Improving**: 1 🔄
+- **Most Conquered Category**: Exploitation & System Compromise 💪
+
+---
+
+## 🏆 **COMPETITIONS & ACHIEVEMENTS**
+
+<div align="center">
+
+| 🏆 **Competition** | 📅 **Date** | 🎖️ **Level** | 🥇 **Result** | 📜 **Report** |
+|--------------------|-------------|---------------|---------------|----------------|
+| **Pentesting Pro Hacker Mentor** | 2025 | 🌟 Professional | 🥇 **Champion** | [🔗 View Report](.) |
+| **Women4Cyber CyberDrill 2025** | 2025 | 🌟 Professional | 🥇 **Champion** | [🔗 View Report](https://github.com/iceYami/CTF_Analisis/blob/main/Women4Cyber%20_ProfessionalCyberDrill25.md) |
+| **WiFiChallenge Lab** | 2025 | 🌟 Professional | 🥇 **Champion** | [🔗 View Report](https://github.com/iceYami/CTF_Analisis/blob/main/WifiChallenge_Pentest.md) |
+
+</div>
+
+### 🎯 **Competition Highlights**
+- **Specialized in**: Pentesting, Wireless Security, Professional Cyber Drills
+
+---
+
+## 📜 **CERTIFICATIONS**
+
+<div align="center">
+
+| 🏅 **Certification** | 📅 **Date** | 🏢 **Issuer** | 📊 **Status** | 🔗 **Credential** |
+|-----------------------|-------------|---------------|----------------|-------------------|
+| *Coming Soon...* | - | - | 🎯 **Planning** | [🔗 Future Goals](.) |
 
 </div>
 
 ---
 
-## 🏃 **BOUNTY HUNTING**
+## 💻 **DEVELOPMENT & PROGRAMMING**
 
 <div align="center">
 
-| 🏆 **Achievement** | 📅 **Date** | 🎖️ **Recognition** | 📜 **Details** |
-|--------------------|-------------|-------------------|----------------|
-| - |  | 🥇 **-** | [🔗 Report](.) |
+| 🎯 **Project** | 🔧 **Technology** | 🏟️ **Platform** | 📊 **Status** | 📖 **Repository** |
+|----------------|-------------------|------------------|---------------|-------------------|
+| **CTF Analysis Hub** | 📝 Pentesting Writeups | GitHub | 🔄 **Actively Improving** | [📋 View Repo](https://github.com/iceYami/CTF_Analisis) |
+| **Python Mastery Quest** | 🐍 Python Programming | Codewars | 🔄 **Actively Improving** | [📋 View Progress](https://github.com/iceYami/Codewars) |
+| **Python Projects** | 🐍 Python Development | Código Facilito | ✅ **Completed** | [📋 View Projects](https://github.com/iceYami/Python-Projects) |
+| **SQL Mastery Quest** | 🗃️ Database Programming | Codewars | 🔄 **Actively Improving** | [📋 View Progress](https://github.com/iceYami/Codewars) |
+| **SQL Police Department** | 🚔 SQL Investigations | SQL Police | ✅ **Completed** | [📋 View Cases](https://github.com/iceYami/SQL) |
+| **Lost at SQL** | 🗺️ SQL Navigation | LostatSQL | ✅ **Completed** | [📋 View Journey](https://github.com/iceYami/SQL) |
 
 </div>
+
+### 🚀 **Development Highlights**
+- **Active GitHub Contributor** with multiple repositories
+- **Multi-Language Proficiency**: Python & SQL
+- **Continuous Learning**: Active on Codewars and specialized platforms
+
+---
+
+## 🎯 **BUG BOUNTY & VULNERABILITY RESEARCH**
+
+<div align="center">
+
+| 🏆 **Program** | 📅 **Date** | 🐛 **Vulnerability Type** | 💰 **Bounty** | 📜 **Report** |
+|----------------|-------------|---------------------------|----------------|----------------|
+| *Hunting in Progress...* | - | - | 🎯 **Future Target** | [🔗 Coming Soon](.) |
+
+</div>
+
+### 🔍 **Research Focus Areas**
+- **Web Application Security** 🌐
+- **Network Penetration Testing** 🔍
+- **Wireless Security Assessment** 📡
+
+---
+
+## 📈 **OVERALL STATISTICS**
+
+<div align="center">
+
+### 🎯 **Skill Matrix**
+| **Category** | **Challenges** | **Mastery Level** |
+|--------------|----------------|-------------------|
+| 🛡️ **Exploitation** | 4 challenges | ⭐⭐⭐⭐⭐ |
+| 💻 **System Security** | 3 challenges | ⭐⭐⭐⭐⭐ |
+| 💉 **Injection Attacks** | 2 challenges | ⭐⭐⭐⭐⭐ |
+| 🔍 **Reconnaissance** | 2 challenges | ⭐⭐⭐⭐ |
+| 🔬 **Digital Forensics** | 1 challenge | ⭐⭐⭐⭐ |
+
+### 🏆 **2025 Achievements**
+- **12 CTF Challenges** solved/improving
+- **3 Professional Competitions** won
+- **6 Development Projects** active/completed
+- **100% Success Rate** in competitions
+
+</div>
+
+---
+
+*"Continuous learning in cybersecurity - from capture the flag to real-world security."* 🛡
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
