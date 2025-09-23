@@ -1,0 +1,271 @@
+# Simulación Laboral No Country - Transición Profesional a Ciberseguridad
+
+## Perfil del Participante
+**Programa:** Simulación Laboral No Country - Track Ciberseguridad  
+**Período:** 29 septiembre - 3 noviembre 2025  
+**Rol:** Ethical Hacker  
+**Background:** Infraestructura y Sistemas + Máster en Ciberseguridad  
+**Objetivo:** Transición profesional hacia especialización en ethical hacking  
+
+## Contexto Académico y Profesional
+
+### Formación Especializada
+**Máster en Ciberseguridad - Fundamentos Teóricos Sólidos:**
+- Criptografía y algoritmos de seguridad
+- Análisis de vulnerabilidades y threat modeling
+- Frameworks de seguridad (ISO 27001, NIST)
+- Legislación y ética en ciberseguridad
+- Forense digital y análisis de incidentes
+
+**Background en Infraestructura y Sistemas:**
+- Arquitectura de redes y protocolos
+- Administración de sistemas Windows/Linux
+- Virtualización y tecnologías cloud
+- Configuración de firewalls y sistemas de seguridad
+- Monitoreo y logs de sistemas
+
+### Práctica Autodidacta en Ethical Hacking
+**Actividades de Investigación Personal:**
+- Penetration testing en laboratorios controlados
+- Análisis de CVEs y proof-of-concepts
+- Participación en plataformas como HackTheBox, TryHackMe
+- Estudio de herramientas: Nmap, Burp Suite, Metasploit
+- Lectura de papers de seguridad y threat intelligence
+
+## Análisis Estratégico de la Participación
+
+### Marco Teórico de Aplicación
+**Metodologías de Penetration Testing a Implementar:**
+
+**1. OWASP Testing Guide v4.2 - Aplicación Estructurada**
+- **Information Gathering:** Reconocimiento pasivo y activo
+  - *Análisis DNS y subdominios*
+  - *Fingerprinting de aplicaciones web*
+  - *Identificación de tecnologías utilizadas*
+- **Configuration and Deployment Management Testing**
+  - *Review de configuraciones de servidor*
+  - *Análisis de métodos HTTP permitidos*
+  - *Testing de file extensions handling*
+
+**2. NIST Cybersecurity Framework - Perspectiva Analítica**
+- **Identify:** Catalogación de assets y superficie de ataque
+- **Protect:** Evaluación de controles de seguridad implementados
+- **Detect:** Análisis de capacidades de detección existentes
+- **Respond:** Evaluación de procedimientos de respuesta a incidentes
+- **Recover:** Análisis de planes de continuidad y recuperación
+
+### Enfoque de Threat Modeling Avanzado
+**Metodología STRIDE Application:**
+- **Spoofing:** Análisis de vulnerabilidades de autenticación
+- **Tampering:** Evaluación de integridad de datos
+- **Repudiation:** Revisión de logging y auditabilidad
+- **Information Disclosure:** Testing de exposure de información sensible
+- **Denial of Service:** Análisis de resistencia a ataques DoS
+- **Elevation of Privilege:** Testing de escalación de privilegios
+
+## Planificación Técnica Detallada
+
+### Fase de Reconocimiento y Análisis (Semana 0-1)
+**Metodología de Information Gathering:**
+
+**Reconocimiento Pasivo:**
+- **DNS Enumeration:** Análisis exhaustivo de registros DNS
+  - *Herramientas: dig, nslookup, dnsenum*
+  - *Búsqueda de subdominios y DNS wildcards*
+- **OSINT (Open Source Intelligence):**
+  - *Google dorking para información expuesta*
+  - *Análisis de redes sociales y exposición de información*
+  - *Búsqueda en Shodan y Censys*
+
+**Reconocimiento Activo:**
+- **Network Scanning:** Mapeo de infraestructura
+  - *Nmap scripting para detección de servicios*
+  - *Banner grabbing y version detection*
+  - *OS fingerprinting y network topology mapping*
+
+### Análisis de Vulnerabilidades Estructurado (Semanas 1-2)
+
+**Web Application Security Assessment:**
+**OWASP Top 10 2021 - Análisis Sistemático:**
+
+1. **Broken Access Control**
+   - *Horizontal privilege escalation testing*
+   - *Vertical privilege escalation analysis*
+   - *IDOR (Insecure Direct Object References) identification*
+
+2. **Cryptographic Failures**
+   - *SSL/TLS configuration analysis*
+   - *Weak encryption algorithm identification*
+   - *Certificate validation testing*
+
+3. **Injection Attacks**
+   - *SQL Injection: Union, Boolean, Time-based*
+   - *Command Injection testing*
+   - *LDAP y XML injection analysis*
+
+4. **Insecure Design**
+   - *Business logic flaw identification*
+   - *Architecture security review*
+   - *Threat modeling validation*
+
+**Metodología de Testing Técnico:**
+```
+1. Manual Testing Approach:
+   - Burp Suite Professional utilization
+   - Custom payload development
+   - Response analysis and pattern recognition
+
+2. Automated Scanning Integration:
+   - OWASP ZAP configuration
+   - Nikto web server scanning
+   - Custom script development for specific tests
+```
+
+### Framework de Análisis de Infraestructura (Semana 2-3)
+
+**Network Penetration Testing Methodology:**
+
+**Fase 1: Network Discovery**
+- **ARP Scanning:** Identificación de hosts activos
+- **Port Scanning:** Análisis exhaustivo de puertos TCP/UDP
+- **Service Enumeration:** Identificación detallada de servicios
+
+**Fase 2: Vulnerability Assessment**
+- **CVE Analysis:** Correlación de versiones con vulnerabilidades conocidas
+- **Configuration Weaknesses:** Análisis de configuraciones inseguras
+- **Default Credentials Testing:** Verificación de credenciales por defecto
+
+**Fase 3: Exploitation Analysis**
+- **Proof of Concept Development:** Creación de exploits controlados
+- **Post-Exploitation Analysis:** Evaluación de impacto potencial
+- **Lateral Movement Assessment:** Análisis de propagación de compromiso
+
+## Marco Analítico de Evaluación
+
+### Taxonomía de Vulnerabilidades
+**Clasificación según CVSS v3.1:**
+- **Base Score Calculation:** Análisis de impacto y exploitabilidad
+- **Temporal Score Assessment:** Evaluación de madurez de exploit
+- **Environmental Score:** Análisis de impacto en contexto específico
+
+**CWE (Common Weakness Enumeration) Mapping:**
+- Identificación de debilidades según taxonomía CWE
+- Análisis de patrones de vulnerabilidades
+- Correlación con CAPEC (Common Attack Pattern Enumeration)
+
+### Metodología de Risk Assessment
+**Qualitative Risk Analysis Framework:**
+```
+Risk = Threat × Vulnerability × Asset Value × Impact
+
+Donde:
+- Threat: Probabilidad de materialización
+- Vulnerability: Facilidad de explotación
+- Asset Value: Valor del activo comprometido
+- Impact: Consecuencias del compromiso
+```
+
+**Quantitative Risk Metrics:**
+- **FAIR (Factor Analysis of Information Risk) Application**
+- **Monte Carlo Risk Simulation**
+- **ROI Analysis de controles de seguridad**
+
+## Competencias Analíticas Desarrolladas
+
+### Análisis Técnico Avanzado
+**Static Code Analysis:**
+- Comprensión de secure coding practices
+- Identificación de anti-patterns de seguridad
+- Análisis de flujo de datos y control flow
+
+**Dynamic Analysis:**
+- Runtime behavior analysis
+- Memory corruption detection
+- Race condition identification
+
+**Forensic Analysis Capabilities:**
+- Log analysis y pattern recognition
+- Timeline reconstruction
+- Evidence correlation y chain of custody
+
+### Capacidades de Research y Intelligence
+**Threat Intelligence Analysis:**
+- IOC (Indicators of Compromise) identification
+- TTP (Tactics, Techniques, Procedures) mapping
+- MITRE ATT&CK framework application
+
+**Vulnerability Research:**
+- Zero-day vulnerability identification methodology
+- Exploit development theoretical framework
+- Responsible disclosure process understanding
+
+## Aplicación de Frameworks Teóricos
+
+### Security Architecture Analysis
+**Zachman Framework for Security:**
+- **What (Data):** Information classification y data flow analysis
+- **How (Function):** Security controls y process analysis
+- **Where (Network):** Network segmentation y topology analysis
+- **Who (People):** Identity management y access control analysis
+- **When (Time):** Temporal security controls analysis
+- **Why (Motivation):** Business continuity y compliance analysis
+
+### Compliance Framework Integration
+**ISO 27001/27002 Controls Assessment:**
+- A.5 Information Security Policies
+- A.6 Organization of Information Security
+- A.8 Asset Management
+- A.9 Access Control
+- A.12 Operations Security
+- A.13 Communications Security
+- A.14 System Acquisition, Development and Maintenance
+
+## Metodología de Documentación y Reporting
+
+### Technical Report Structure
+**Executive Summary:**
+- Risk landscape overview
+- Critical findings prioritization
+- Business impact assessment
+- Strategic recommendations
+
+**Technical Findings:**
+- Vulnerability detailed analysis
+- Exploitation scenarios
+- Impact assessment matrix
+- Remediation roadmap
+
+**Appendices:**
+- Testing methodology description
+- Tool configuration details
+- Evidence screenshots y logs
+- References y additional resources
+
+### Knowledge Transfer Framework
+**Team Education Components:**
+- Security awareness training development
+- Secure development guidelines creation
+- Incident response playbook contribution
+- Best practices documentation
+
+## Resultados de Aprendizaje Esperados
+
+### Competencias Técnicas Consolidadas
+- **Penetration Testing Methodology Mastery**
+- **Vulnerability Assessment Expertise**
+- **Risk Analysis Proficiency**
+- **Security Architecture Understanding**
+
+### Competencias Analíticas Desarrolladas
+- **Critical Thinking in Security Contexts**
+- **Pattern Recognition in Attack Vectors**
+- **Systematic Problem-Solving Approaches**
+- **Research y Investigation Skills**
+
+### Competencias de Comunicación Técnica
+- **Technical Writing for Security Audiences**
+- **Risk Communication to Business Stakeholders**
+- **Knowledge Transfer to Development Teams**
+- **Presentation of Complex Technical Concepts**
+
+---
